@@ -1,0 +1,363 @@
+#antesdojogo,#primeiro-tempo,#intervalo,#segundo-tempo,#primeiro-tempo-prorrogacao,#segundo-tempo-prorrogacao,#disputa-penaltis,#fimdejogo{display:none}
+
+/*p�gina futebol*/
+.futebol #placar {width:308px;margin:10px auto 0;}
+.futebol #placar img{display:block;float:left;width:50px;height:50px;margin:0 2px;}
+.futebol #placar span{display:block;float:left;margin:0 1px;}
+.futebol #placar span.time{width: 70px;}
+.futebol #placar span.time:first-of-type{text-align:left;}
+.futebol #placar span.time:last-of-type{text-align:right;}
+.futebol #placar span.time span.sigla{display:block;width:100%;line-height: 25px;margin: 0;font-size: 35px;font-weight:600;color:#404040;}
+.futebol #placar span.time span.nome{width:100%;font-size:15px;font-weight:600;color:#404040;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.futebol #placar span#gols-time01,
+.futebol #placar span#gols-time02{width:20px;line-height:26px;font-size:35px;font-weight:600;color:#404040;text-align:left;}
+.futebol #placar span#gols-time01{text-align:right;}
+.futebol #placar span#x{display:block;width:10px;font-size:24px;font-weight:600;color:#9a9a9a;text-align: center;}
+.futebol #servico {margin:10px 20px 5px;}
+.futebol #servico p{font: 12px/16px Arial, sans-serif;color:#666;margin:0;padding:0;text-align:center;}
+.futebol #penaltis-placar{position:relative;margin:15px 0 10px;}
+.futebol #penaltis-placar ol{width: 120px;padding: 0;margin:0;}
+.futebol #penaltis-placar ol:first-of-type{margin-left:10px;}
+.futebol #penaltis-placar ol:last-of-type{position:absolute;top:0;right:10px;}
+.futebol #penaltis-placar ol li{width: 17px;height: 17px; overflow: hidden; text-indent: -999px; margin:4px 2px 0 2px; border-radius: 50%; border: 1px solid #ccc;}
+.futebol #penaltis-placar ol:first-of-type li{float: left;}
+.futebol #penaltis-placar ol:first-of-type li:first-child,.futebol #penaltis-placar ol:first-of-type li:nth-child(6),.futebol #penaltis-placar ol:first-of-type li:nth-child(11),.futebol #penaltis-placar ol:first-of-type li:nth-child(16){float: left;margin-left:0;}
+.futebol #penaltis-placar ol:last-of-type li{float: right;}
+.futebol #penaltis-placar ol:last-of-type li:first-child,.futebol #penaltis-placar ol:last-of-type li:nth-child(6),.futebol #penaltis-placar ol:last-of-type li:nth-child(11),.futebol #penaltis-placar ol:last-of-type li:nth-child(16){float: right;margin-right:0;}
+.futebol #penaltis-placar ol li.convertido{background: #599501;border-color: #599501;}
+.futebol #penaltis-placar ol li.perdido{width: 19px;height: 19px; border: 0; border-radius: 0; background: url(../img/spriteFutebol.png) no-repeat -21px -180px;}
+.futebol #penaltis-placar #cobrancas{position:absolute;top:0;left:50%;margin-left:-25px;width:50px;height:25px;line-height:25px;font-size: 24px;font-weight: 600;text-align:center;}
+.futebol #penaltis-placar #cobrancas span{display:block;width:21px;float:left;font-size: 25px;color:#303030;}
+.futebol #penaltis-placar #cobrancas span.vs{width:8px;color:#9a9a9a;}
+.futebol h3{height:20px;margin:10px auto 20px;text-align:center;text-transform:uppercase;border-bottom:1px solid #374A62}
+.futebol h3 span{display:inline-block;height:25px;line-height:25px;margin:5px auto 0;padding:0 10px;font-weight:600;color:#374A62;background:#fff;}
+.futebol h4{height:20px;margin:10px auto 0;text-align:center;text-transform:uppercase;border-bottom:4px solid #eee}
+.futebol h4 span{display:inline-block;height:25px;line-height:25px;margin:7px auto 0;padding:0 10px;font-weight:600;color:#959595;background:#fff;}
+.futebol ul{margin:0;padding:0;}
+.futebol ul:first-of-type{margin-top:20px;}
+.futebol ul:last-of-type{margin-bottom:30px;}
+.futebol ul li{position:relative;margin:10px 0;padding:10px 50px 0 0;border-top:1px solid #e0e0e0;}
+.futebol ul li:first-child{border-top:none;}
+.futebol ul li .tempo{display:block;width:50px;height:45px;float:left;margin:0 15px 0 10px;font-family:Arial, sans-serif;}
+.futebol ul li .tempo .minuto{display:block;height: 25px;font-size:22px;font-weight:600;color:#9A9A9A;text-align:center;}
+.futebol ul li .tempo .etapa{display:block;font-size:11px;color:#9A9A9A;text-align:center;}
+.futebol ul li .intervalo,.futebol ul li .penaltis{display:block;width:50px;height:45px;line-height:45px;float:left;margin:0 15px 0 10px;font-size:13px;color:#9A9A9A;text-transform:uppercase;}
+.futebol ul li .intervalo.preJogo{height:35px;line-height:15px;margin-top:10px;text-align: center;}
+.futebol ul li.substituicao:before{position:absolute;top:15px;right:15px;display:block;width:25px;height:25px;background:url(../img/spriteFutebol.png) no-repeat -18px -123px;}
+.futebol ul li p{display:table-cell;height:45px;line-height:18px;vertical-align:middle;margin:0 20px;color:#303030;font-family:Arial, Helvetica, Sans-serif;font-size:14px;}
+.futebol ul li p b{display: block;}
+.futebol ul li .gol{display:block;width:130px;height:18px;overflow:hidden;text-indent:-999px;margin:5px 10px 5px 0;background: url(../img/spriteFutebol.png) no-repeat -21px -22px;}
+.futebol ul li.cartaoAmarelo:before{position:absolute;top:15px;right:15px;display:block;width:25px;height:25px;background:url(../img/spriteFutebol.png) no-repeat -19px -63px;}
+.futebol ul li.cartaoVermelho:before{position:absolute;top:15px;right:15px;display:block;width:25px;height:25px;background:url(../img/spriteFutebol.png) no-repeat -19px -93px;}
+.futebol ul li.gol .tempo span{color:#303030;}
+.futebol ul li.gol img{position:absolute;top:12px;right:12px;display:block;width:40px;}
+.futebol ul li.substituicao .tempo span,.futebol ul li.cartaoAmarelo .tempo span,.futebol ul li.cartaoVermelho .tempo span,.futebol ul li.perigoDeGol .tempo span{color:#303030;}
+.futebol ul li.perigoDeGol:before{position:absolute;top:15px;right:10px;display:block;width:36px;height:25px;background:url(../img/spriteFutebol.png) no-repeat -21px -153px;}
+
+/*tabela*/
+.tabela #fase{position:relative;height: 60px;margin:0 10px 10px;}
+.tabela #fase span{position: absolute;top:20px;left: 50%;width:190px;line-height: 20px;margin-left: -95px;font-size: 20px;font-weight: 600;color: #1c314d;text-align:center;text-transform:uppercase;}
+.tabela #fase a,.tabela #fase b{width:48px;height:60px;overflow:hidden;text-indent:-999px;border:1px solid #ccc;background-color:#fff;box-shadow: 0 1px 0 #ddd;background-image: url(../img/sprite-tabelas.png);}
+.tabela #fase a.anterior,.tabela #fase b.anterior{float:left;background-position:0 -184px;}
+.tabela #fase a.proxima,.tabela #fase b.proxima{float:right;background-position:0 -62px;}
+.tabela #fase b.anterior{background-color: #F0F0F0;background-position: 1px -1px;}
+.tabela #fase b.proxima{background-color: #F0F0F0;background-position:1px -122px;}
+
+.tabela .boxs{margin:0 10px 10px;border:1px solid #ccc;background: #fff;box-shadow: 0 1px 0 #ddd;}
+.tabela .boxs h2{font-size: 20px;font-weight: 600;color: #1c314d;text-transform:uppercase;margin:0;}
+.tabela .boxs h2 a{display:block;padding:14px 20px;outline:none;background: url(../img/sprite-tabelas.png) right -306px no-repeat;}
+.tabela .boxs h2 a.hAzulClaro{color:#fff;background: #296B8B url(../img/sprite-tabelas.png) right -367px no-repeat;}
+.tabela .boxs h2 a.hAzulEscuro{color:#fff;background: #1C314E url(../img/sprite-tabelas.png) right -367px no-repeat;}
+.tabela .boxs h2 a.hVerdeClaro{color:#fff;background: #008B71 url(../img/sprite-tabelas.png) right -367px no-repeat;}
+.tabela .boxs h2 a.hAzulClaro.open{color:#296B8B;background-color: #fff;background-position: right -432px;}
+.tabela .boxs h2 a.hAzulEscuro.open{color:#1C314E;padding-top: 9px;border-top:5px solid #1c314d;background-color: #fff;background-position: right -248px;}
+.tabela .boxs h2 a.hVerdeClaro.open{color:#008B71;background-color: #fff;background-position: right -248px;}
+.tabela .boxs h2 a.open{background-position: right -245px;}
+.tabela .boxs > div{display:none;}
+.tabela .boxs > div.openBoxs{display:block;}
+.tabela .boxs#classificacao.bordaClassificacao{border-bottom:5px solid #296B8B ;}
+
+.tabela .boxs.azulClaro h2 a,.tabela .boxs.azulEscuro h2 a{color:#fff;background: url(../img/sprite-tabelas.png) right -367px no-repeat;}
+.tabela .boxs.azulClaro h2{background-color: #296B8B}
+.tabela .boxs.azulEscuro h2{background-color: #1C314E}
+
+.tabela .rodada #classificacao h2{line-height:45px;border-top:1px solid #ccc;}
+.tabela .rodada .classificacao h2{text-indent:20px;}
+
+.tabela .boxs-textos {margin:0 10px 30px;font-family: Arial, sans-serif;}
+.tabela .boxs-textos h2 a{display:block;}
+.tabela .boxs-textos p {font-size:12px;color:#8A8A8A;line-height:15px;}
+
+.tabela .boxs-textos div {display:none; background:#F9F9F9; padding:20px;}
+.tabela .boxs-textos div p {font-size:14px; line-height:20px;}
+.tabela .boxs-textos h2 {text-align:center; width:190px; padding:10px 20px; font:700 18px Oglobocondensed, sans-serif; text-transform:uppercase; background:#f9f9f9; border-radius:3px; border:1px solid #bbb; box-shadow:0 1px 0 rgba(0,0,0,.1); color:#1E96C8; position:relative; margin:0 auto 20px;}
+
+.tabela .classificacao table{width:100%;margin:5px 0 10px;}
+.tabela .classificacao table thead{font-weight: bold;}
+.tabela .classificacao table tr{height:30px;}
+.tabela .classificacao table tr.primeiros{border-left:3px solid #237A00;}
+.tabela .classificacao table tr.primeiros td.times,
+.tabela .classificacao table tr.primeiros td.posicao{color:#237A00;}
+.tabela .classificacao table tr.ultimos{border-left:3px solid #B30000;}
+.tabela .classificacao table tr.ultimos td.times,
+.tabela .classificacao table tr.ultimos td.posicao{color:#B30000;}
+.tabela .classificacao table tr td{width:25px;}
+.tabela .classificacao table thead tr td.posicao,
+.tabela .classificacao table thead tr td.times,
+.tabela .classificacao table thead tr td.var,
+.tabela .classificacao table thead tr td.pontos,
+.tabela .classificacao table thead tr td.jogos,
+.tabela .classificacao table thead tr td.vitorias,
+.tabela .classificacao table thead tr td.saldo{width:30px;text-align:center;color:#343434;}
+.tabela .classificacao table thead tr td.times{width:105px;text-align:left;}
+.tabela .classificacao table tr td.posicao,
+.tabela .classificacao table tr td.pontos{text-align:center;color:#343434;}
+.tabela .classificacao table tr td.times,
+.tabela .classificacao table tr td.pontos{font-weight:bold;}
+.tabela .classificacao table tr td.times span{display: block;width: 85px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.tabela .classificacao table tr td.var,
+.tabela .classificacao table tr td.jogos,
+.tabela .classificacao table tr td.vitorias,
+.tabela .classificacao table tr td.saldo{color:#999;text-align:center;}
+.tabela .classificacao #legenda{margin:35px 10px 10px;}
+.tabela .classificacao #legenda p{height:16px;line-height:16px;margin:5px 0;}
+.tabela .classificacao #legenda p span{display:block;width:16px;height:16px;float:left;margin-right: 5px;}
+.tabela .classificacao #legenda p:last-of-type span{background: #B30000;}
+.tabela .classificacao #legenda p:first-of-type span{background: #237A00;}
+.tabela .classificacao #siglas{margin:15px 0 35px 10px;}
+.tabela .classificacao #siglas p{line-height:15px;margin:0 6px 5px 1px;}
+.tabela .classificacao #siglas p span{padding:0 10px 0 3px;}
+
+/*TABELA F�CIL*/
+.tbl-stage,.tbl-group,.tbl-round,.tbl-time,.tbl-venue,.tbl-city,.tbl-links,.tbl-date,.tbl-home p,.tbl-away p,.tabelaFacil table thead,.tbl-st-per,.tbl-st-ga,.tbl-st-gf,.tbl-st-d,.tbl-st-l,.tbl-st-team a,#artilharia .tbl-st-pos,.tbl-st-pos a{display:none;}
+.tbl-st-pos,.tbl-st-var-none,.tbl-st-pts,.tbl-st-pld,.tbl-st-w,.tbl-st-gd{text-align:center;}
+.tbl-st-pts,.tbl-st-team{font-weight: bold;}
+ div.openBoxs .tabelaFacil{margin:0 10px;}
+.tabelaFacil table{width:100%;margin-bottom: 20px;}
+.tabelaFacil table tr:last-of-type{border:0;}
+.tabelaFacil table tr{position: relative;height:40px;text-align:center;margin: 0 0 7px 0;padding: 0;border-bottom: 1px solid #ccc;}
+.tabelaFacil table td.tbl-score b i{font-style: normal;font-size: 18px;font-weight: 600;color: #9a9a9a;padding: 0 2px;}
+.tabelaFacil table td.tbl-score b .tbl-home-score,.tabelaFacil table td.tbl-score b .tbl-away-score{font-size: 30px;font-weight: 600;color: #303030;}
+.tabelaFacil table td.tbl-score .data{line-height: 15px;color: #8A8A8A;text-align: center;margin: -5px 0 0;}
+.tabelaFacil table td.tbl-home .nomeTimeCasa,.tabelaFacil table td.tbl-away .nomeTimeFora{height: 20px;line-height: 18px;font-size: 25px;font-family: 'OgloboCondensed', Arial, sans-serif;font-weight: 600;color: #262626;text-align: center;text-transform: uppercase;margin: 0px 2px -5px;}
+.tabelaFacil table td.tbl-home span,.tabelaFacil table td.tbl-away span{position:relative;display:block;width:105px;height:63px;margin:4px 0;font-size:15px;font-weight:600;text-transform:capitalize;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.tabelaFacil table td.tbl-home span{float:left;}
+.tabelaFacil table td.tbl-away span{float:right;}
+.tabelaFacil table td span .escudo{width:30px;height:30px;margin:0 auto;}
+
+.tabela #artilharia ul{margin:0 10px;padding:0;}
+.tabela #artilharia ul li{display:block;padding:0;border-bottom:1px solid #DEDEDE;}
+.tabela #artilharia ul li:last-of-type{margin-bottom:25px;border-bottom:0;}
+.tabela #artilharia ul li img{display:block;width:45px;height:45px;float:left;margin:8px 0 0;}
+.tabela #artilharia ul li p{width:115px;height:55px;line-height:12px;float:left;margin:5px 0 0 5px;}
+.tabela #artilharia ul li p span{display:block;text-transform: capitalize;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;margin:3px 0;padding:0;color:#999;text-transform: uppercase;}
+.tabela #artilharia ul li p span:first-of-type,.tabela #artilharia ul li p span:last-of-type{color:#343434;}
+.tabela #artilharia ul li p span:last-of-type{text-transform: capitalize;}
+.tabela #artilharia ul li p:last-of-type,.tabela #artilharia ul li:first-of-type p:last-of-type{width:90px;height:50px;line-height:50px;float:right;font-size:25px;text-align: right;}
+.tabela #artilharia ul li:first-of-type p:last-of-type{font-size:35px;}
+
+.tabela #tab-carioca #classificacao{margin-bottom:25px;}
+.tabela #tab-carioca #classificacao thead tr{text-transform: uppercase;}
+.tabela #tab-carioca #classificacao tbody tr:nth-child(1),
+.tabela #tab-carioca #classificacao tbody tr:nth-child(2),
+.tabela #tab-carioca #classificacao tbody tr:nth-child(3),
+.tabela #tab-carioca #classificacao tbody tr:nth-child(4){border-left: 3px solid #237A00;}
+.tabela #tab-carioca #classificacao tbody tr:nth-child(1) .tbl-st-team,
+.tabela #tab-carioca #classificacao tbody tr:nth-child(2) .tbl-st-team,
+.tabela #tab-carioca #classificacao tbody tr:nth-child(3) .tbl-st-team,
+.tabela #tab-carioca #classificacao tbody tr:nth-child(4) .tbl-st-team,
+.tabela #tab-carioca #classificacao tbody tr:nth-child(1) .tbl-st-pos,
+.tabela #tab-carioca #classificacao tbody tr:nth-child(2) .tbl-st-pos,
+.tabela #tab-carioca #classificacao tbody tr:nth-child(3) .tbl-st-pos,
+.tabela #tab-carioca #classificacao tbody tr:nth-child(4) .tbl-st-pos{color: #237A00;}
+.tabela #tab-carioca #classificacao tbody tr:nth-last-of-type(2),
+.tabela #tab-carioca #classificacao tbody tr:last-child{border-left: 3px solid #B30000;}
+.tabela #tab-carioca #classificacao tbody tr:nth-last-of-type(2) .tbl-st-team,
+.tabela #tab-carioca #classificacao tbody tr:last-child .tbl-st-team,
+.tabela #tab-carioca #classificacao tbody tr:nth-last-of-type(2) .tbl-st-pos,
+.tabela #tab-carioca #classificacao tbody tr:last-child .tbl-st-pos{color: #B30000;}
+.tabela #tab-carioca #classificacao .tbl-st-team span {display:block;margin-left:10px;}
+
+.classificacao{margin-bottom:25px;}
+.classificacao h2{height:40px;line-height:40px;border-top:1px solid #ccc;}
+.classificacao thead tr{text-transform: uppercase;}
+.classificacao tbody tr:nth-child(1),
+.classificacao tbody tr:nth-child(2), .classificacao tbody tr:nth-child(3), .classificacao tbody tr:nth-child(4){border-left: 3px solid #237A00;}
+
+.classificacao tbody tr:nth-child(1),
+.classificacao tbody tr:nth-child(2),
+.classificacao tbody tr:nth-child(3),
+.classificacao tbody tr:nth-child(4),
+.classificacao table tr:nth-child(1) td.posicao,
+.classificacao table tr:nth-child(2) td.posicao,
+.classificacao table tr:nth-child(3) td.posicao,
+.classificacao table tr:nth-child(4) td.posicao {color:#237A00;}
+.classificacao tbody tr:nth-last-child(1),
+.classificacao tbody tr:nth-last-child(2),
+.classificacao table tr:nth-last-child(1) td.posicao,
+.classificacao table tr:nth-last-child(2) td.posicao {color:#B30000;}
+
+.classificacao .tbl-st-team span{display:block;margin-left:10px;}
+
+#logo-tabela-facil {float:right;margin:15px 0 0;}
+
+/* brasileiro */
+.brasileiro .porTime .escudos {overflow:hidden; padding:0 20px; margin:0; text-align:center;}
+.brasileiro .porTime .escudos li {width:80px; height:60px; display:inline-block; margin-bottom:25px; text-align:center; color:#666; font-size:16px;}
+.brasileiro .porTime .escudos li a {background: url(../img/esportes/brasileiro-a-2014.jpg) no-repeat; -webkit-background-size: 40px 800px; background-size: 40px 800px; width:40px; height:40px; display:block; text-indent:-99999px; margin:0 20px;}
+.brasileiro.serieB .porTime .escudos li a {background: url(../img/esportes/brasileiro-b-2014.jpg) no-repeat; -webkit-background-size: 40px 800px; background-size: 40px 800px; width:40px; height:40px; display:block; text-indent:-99999px; margin:0 20px;}
+.brasileiro .porTime .escudos li a.active {opacity:0.3;}
+
+.brasileiro .tabelaFacil table td span .escudo, .brasileiro .tabelaFacilArtilharia #artilharia .tbl-player div {background:url(../img/esportes/brasileiro-a-2014.jpg);-webkit-background-size: 30px 600px; background-size: 30px 600px;background-repeat: no-repeat;}
+.brasileiro.serieB .tabelaFacil table td span .escudo, .brasileiro .tabelaFacilArtilharia #artilharia .tbl-player div {background:url(../img/esportes/brasileiro-b-2014.jpg);-webkit-background-size: 30px 600px; background-size: 30px 600px;background-repeat: no-repeat;}
+.brasileiro .tabelaFacil table td span.tbl-team- .escudo {background:url(../img/times/sprite-copadobrasil2014.jpg?vtr); background-size: 30px 2580px; background-position: 0 -2370px;}
+
+.brasileiro .porTime .escudos li a.time02 {background-position: 0 -40px;}
+.brasileiro .porTime .escudos li a.time03 {background-position: 0 -80px;}
+.brasileiro .porTime .escudos li a.time04 {background-position: 0 -120px;}
+.brasileiro .porTime .escudos li a.time05 {background-position: 0 -160px;}
+.brasileiro .porTime .escudos li a.time06 {background-position: 0 -200px;}
+.brasileiro .porTime .escudos li a.time07 {background-position: 0 -240px;}
+.brasileiro .porTime .escudos li a.time08 {background-position: 0 -280px;}
+.brasileiro .porTime .escudos li a.time09 {background-position: 0 -320px;}
+.brasileiro .porTime .escudos li a.time10 {background-position: 0 -360px;}
+.brasileiro .porTime .escudos li a.time11 {background-position: 0 -400px;}
+.brasileiro .porTime .escudos li a.time12 {background-position: 0 -440px;}
+.brasileiro .porTime .escudos li a.time13 {background-position: 0 -480px;}
+.brasileiro .porTime .escudos li a.time14 {background-position: 0 -520px;}
+.brasileiro .porTime .escudos li a.time15 {background-position: 0 -560px;}
+.brasileiro .porTime .escudos li a.time16 {background-position: 0 -600px;}
+.brasileiro .porTime .escudos li a.time17 {background-position: 0 -640px;}
+.brasileiro .porTime .escudos li a.time18 {background-position: 0 -680px;}
+.brasileiro .porTime .escudos li a.time19 {background-position: 0 -720px;}
+.brasileiro .porTime .escudos li a.time20 {background-position: 0 -760px;}
+
+.brasileiro .porTime .tabelaFacil {display:none;}
+.brasileiro .porTime .tabelaFacil.active {display:block;}
+.brasileiro .classificacao h2 {height:auto;}
+.brasileiro .classificacao .tbl-st-pos9 {color: #B30000;}
+
+/* F1 */
+.f1 .boxs h2 span:after {content:"|"; color:#cdcdcd; padding:0 5px 0 8px; font-weight:400;}
+.f1 table thead {display:table-header-group; text-transform:uppercase; color:#8e8e8e;}
+.f1 table thead a, .f1 #etapas .tbl-team {color:#8e8e8e;}
+.f1 thead .tbl-st-pos a {display:inline-block;}
+.f1 table i {font-style:normal;}
+.f1 .tbl-laps, .f1 .tbl-time, .f1 .tbl-grid, .f1 .tbl-team b, .f1 .classificacao .tbl-gp, .f1 .boxs-textos:last-of-type {display:none;}
+.f1 .tbl-st-pos1 .tbl-st-pos, .f1 .tbl-st-pos2 .tbl-st-pos, .f1 .tbl-st-pos1 .tbl-driver, .f1 .tbl-st-pos2 .tbl-driver {color:#007f00;}
+.f1 .tbl-pts {font-weight:bold;}
+
+.f1 .race-info {margin:0 10px; padding-left:50px; background: url(../img/esportes/f1.png) no-repeat;}
+.f1 .race-info p.title {text-transform:uppercase; font-size:30px; font-weight:600; margin:0 0 15px; line-height:21px;}
+.f1 .race-info p.title span {display:block; text-transform:none; font-size:13px; font-weight:400;}
+
+.f1 .gp-mal {background-position: 0 -44px;}
+.f1 .gp-bah {background-position: 0 -88px;}
+.f1 .gp-chi {background-position: 0 -132px;}
+.f1 .gp-esp {background-position: 0 -176px;}
+.f1 .gp-mon {background-position: 0 -220px;}
+.f1 .gp-can {background-position: 0 -264px;}
+.f1 .gp-aut {background-position: 0 -308px;}
+.f1 .gp-ing {background-position: 0 -352px;}
+.f1 .gp-ale {background-position: 0 -396px;}
+.f1 .gp-hun {background-position: 0 -440px;}
+.f1 .gp-bel {background-position: 0 -484px;}
+.f1 .gp-ita {background-position: 0 -528px;}
+.f1 .gp-cin {background-position: 0 -572px;}
+.f1 .gp-jap {background-position: 0 -616px;}
+.f1 .gp-rus {background-position: 0 -660px;}
+.f1 .gp-eua {background-position: 0 -704px;}
+.f1 .gp-bra {background-position: 0 -748px;}
+.f1 .gp-abu {background-position: 0 -792px;}
+.f1 .classificacao tbody tr:nth-last-child(1), .f1 .classificacao tbody tr:nth-last-child(2), .f1 .classificacao table tr:nth-last-child(1) td.posicao, .f1 .classificacao table tr:nth-last-child(2) td.posicao {color:#222;}
+.f1 .classificacao table {text-align:center;}
+
+/* abas tabela */
+.tabs ul {text-align:center; display:none; padding:0;}
+.tabs.bordaClassificacao ul {display:block;}
+.tabs ul li {position:relative; display:inline-block; text-transform:uppercase; border:2px solid #e2e2e2; background:#FFF; width:45%; padding:5px 0;}
+.tabs ul li a {display:block; color:#0098cb;}
+.tabs ul li.active {background:#f3f3f3;}
+.tabs ul li.active:after, .tabs ul li.active:before {top:100%;left:50%; border: solid transparent; content: " ";
+height:0; width:0; position:absolute; pointer-events:none;}
+.tabs ul li.active:after {border-color: rgba(255, 255, 255, 0); border-top-color: #f3f3f3; border-width:8px; margin-left:-8px;}
+.tabs ul li.active:before {border-color: rgba(226, 226, 226, 0); border-top-color:#e2e2e2; border-width:10px; margin-left:-10px;}
+.tabs ul li.active a {color:#9a9a9a;}
+
+.tabela .tabs > .classificacao.openBoxs:last-of-type {display:none;}
+
+/* tempo real app */
+#wrapper.temporeal {width:100%}
+#wrapper.temporeal p.xtimes { padding:10px; color:#666; background:#eaf5f9; }
+#wrapper.temporeal p.separador { color:#2d9bc7; font-weight:bold; padding-top:5px; border-top:1px solid #ccc; }
+#wrapper.temporeal li { border:none; padding:10px 0; border-top:1px dotted #ddd; }
+#wrapper.temporeal li span { display:block; font-weight:bold; text-transform:uppercase; font-size:11px; margin-bottom:5px; }
+#wrapper.temporeal .content { margin:10px; }
+
+#wrapper.temporeal p.title {color:#666;font-size:15px;background:#eaf5f9;padding:10px}
+#wrapper.temporeal p.participantes{color:#999;font-size:12px;text-transform:uppercase}
+
+#wrapper.temporeal.jogos h4 { border-top:1px solid #ccc; padding-top:5px; margin-top:10px; color: #019e8b; text-transform: uppercase;}
+#wrapper.temporeal.jogos ul {padding:0; margin:0;}
+#wrapper.temporeal.jogos li { padding:0; border:none; }
+#wrapper.temporeal.jogos li strong { display:block; font-weight:bold; text-transform:uppercase; font-size: 14px; margin-bottom:5px; }
+#wrapper.temporeal.jogos li span { color:#666; background:#eaf5f9; font-size: 15px; font-weight:normal; text-transform:none; padding:5px; }
+
+/* tempo real app */
+#wrapper.temporeal {width:100%}
+#wrapper.temporeal p.xtimes { padding:10px; color:#666; background:#eaf5f9; }
+#wrapper.temporeal p.separador { color:#2d9bc7; font-weight:bold; padding-top:5px; border-top:1px solid #ccc; }
+#wrapper.temporeal li { border:none; padding:10px 0; border-top:1px dotted #ddd; }
+#wrapper.temporeal li span { display:block; font-weight:bold; text-transform:uppercase; font-size:11px; margin-bottom:5px; }
+#wrapper.temporeal .content { margin:10px; }
+
+#wrapper.temporeal p.title {color:#666;font-size:15px;background:#eaf5f9;padding:10px}
+#wrapper.temporeal p.participantes{color:#999;font-size:12px;text-transform:uppercase}
+
+#wrapper.temporeal.jogos h4 { border-top:1px solid #ccc; padding-top:5px; margin-top:10px; color: #019e8b; text-transform: uppercase;}
+#wrapper.temporeal.jogos ul {padding:0; margin:0;}
+#wrapper.temporeal.jogos li { padding:0; border:none; }
+#wrapper.temporeal.jogos li strong { display:block; font-weight:bold; text-transform:uppercase; font-size: 14px; margin-bottom:5px; }
+#wrapper.temporeal.jogos li span { color:#666; background:#eaf5f9; font-size: 15px; font-weight:normal; text-transform:none; padding:5px; }
+
+
+
+@media screen and (min-width: 240px) and (max-width: 320px) {
+	.futebol #placar {width: 240px;}
+	.futebol #placar img{width:40px;height:40px;}
+	.futebol #placar span.time{width: 53px;}
+	.futebol #placar span{margin:0;}
+	.futebol #placar span#gols-time01,.futebol #placar span#gols-time02{width:16px;}
+	.futebol #placar span.time span.sigla,.futebol #placar span#gols-time01, .futebol #placar span#gols-time02{font-size: 30px;}
+	.futebol #placar span#x{font-size: 22px; padding: 0 2px;}
+	.futebol #penaltis ol{width: 86px;}
+	.futebol #penaltis ol li{width: 13px;height: 13px;margin:6px 1px 0 1px;}
+
+	.futebol #penaltis-placar ol{width: 90px;}
+	.futebol ul li .gol{width:115px;height:20px;background:url(../img/spriteFutebol.png) no-repeat -18px -17px /157px 174px;margin:5px 0 0}
+	.futebol #penaltis-placar ol li{width:15px;height:15px;margin:4px 0 0 1px}
+	.futebol #penaltis-placar ol li.perdido{width:17px;height:17px;background:url(../img/spriteFutebol.png) no-repeat -22px -180px;background-size:178px 197px}
+	.tabela #fase span{width:100px;top:10px;margin-left:-50px}
+	.tabela .rodada ul li .time{width:80px}
+	.tabela .rodada ul li .time img{width:30px}
+	.tabela .rodada ul li .time .nome{width:50px;font-size:25px}
+	.tabela .rodada ul li .time .nome span{font-size:14px}
+	.tabela .rodada ul li .placar{top:2px}
+	.tabela .rodada ul li .placar span:first-of-type,.tabela .rodada ul li .placar span:last-of-type{font-size:25px}
+	.tabela #artilharia ul li p{width:75px}
+	.tabela #artilharia ul li:first-of-type p:last-of-type,.tabela #artilharia ul li p:last-of-type{width:65px}
+	.tabela #artilharia ul li:first-of-type p:last-of-type{font-size:25px}
+	.tabela #artilharia ul li p:last-of-type{font-size:22px}
+	.tabelaFacil table td.tbl-home span,.tabelaFacil table td.tbl-away span{width:82px}
+	.tabelaFacilArtilharia #artilharia .tbl-goals{font-size:22px}
+
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), only screen and ( min--moz-device-pixel-ratio: 1.5), only screen and ( -o-min-device-pixel-ratio: 2/1) {
+	.futebol ul li.substituicao:before{background-image:url(../img/spriteFutebol@2x.png);background-size:178px 197px}
+	.futebol ul li.perigoDeGol:before{background:url(../img/spriteFutebol@2x.png) no-repeat -21px -153px;background-size:178px 197px}
+	.futebol ul li.cartaoAmarelo:before{background:url(../img/spriteFutebol@2x.png) no-repeat -19px -63px;background-size:178px 197px}
+	.futebol ul li.cartaoVermelho:before{background:url(../img/spriteFutebol@2x.png) no-repeat -19px -93px;background-size:178px 197px}
+	.futebol #penaltis ol li.perdido{width:15px;height:15px;background:url(../img/spriteFutebol@2x.png) no-repeat -23px -182px;background-size:178px 197px}
+	.futebol ul li .gol{width:115px;height:20px;background:url(../img/spriteFutebol@2x.png) no-repeat -18px -17px;background-size:157px 174px;margin:5px 0 0}
+}

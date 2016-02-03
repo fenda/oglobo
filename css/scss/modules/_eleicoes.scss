@@ -1,0 +1,84 @@
+.boxApuracao {min-width:283px;position:relative;margin:30px 0 30px;padding-bottom: 20px;border-bottom: 1px solid #BCBCBC;-moz-box-shadow: 0px 1px 2px #c0c0c0;-webkit-box-shadow: 0px 1px 2px #c0c0c0;box-shadow: 0px 1px 2px #c0c0c0;}
+.boxApuracao .title-pais { margin: 10px 10px 0; font-size: 20px; font-weight: 800; color: #464646; text-transform: uppercase; padding: 5px 0 15px 0; border-bottom: 1px solid #E9E9E9; }
+.boxApuracao .cargo {  margin:0 10px 10px;}
+.boxApuracao .cargo > h3 { margin: 0; font-size: 18px; font-weight: 600; color: #464646; text-transform: uppercase; padding: 14px 0 15px 0; border-top: 1px solid #E9E9E9; border-bottom: 1px solid #E9E9E9; }
+.boxApuracao .cargo > h3 span.eleito {color:#fff; background: #3FA93C; }
+.boxApuracao .cargo > h3 span.segundo-turno {color:#fff; background: #D7803E; }
+.boxApuracao .cargo > h3 span {margin: 0 0 0 3px;font-size: 15px;font-weight: 500;color: #464646;text-transform: uppercase;padding: 0 5px;border-radius: 4px;}
+.boxApuracao .cargo > h3 span.atualizacao, .boxApuracao .candidatos-estaduais .filtro span.atualizacao { margin: 3px 2px 0; font-size: 15px; font-weight: 600; color: #9e9c9b; text-align: right; text-transform: none; padding: 0; float: right;}
+.boxApuracao .cargo ol{list-style:none;padding:0;margin:0;}
+.boxApuracao .cargo ol li.thead{margin-bottom:20px;padding:5px 0;border-bottom:1px solid #E9E9E9;}
+.boxApuracao .cargo ol li.thead p{float:left;margin:0;padding:3px 0;font-size: 15px;font-weight: 600;color: #9e9c9b;}
+.boxApuracao .cargo ol li.thead p.candidatos{width:80%;}
+.boxApuracao .cargo ol li.thead p.votos{width:20%;text-align: right;}
+.boxApuracao .cargo ol li.candidatos{height: 50px;margin:1px 0 12px 0;}
+.boxApuracao .cargo ol li.candidatos img{display:block;width:45px;height:45px;float:left;margin:3px 10px 0 0;border-radius: 4px;}
+.boxApuracao .cargo ol li.candidatos .parcial{width:auto;height:40px;margin-left:50px;}
+.boxApuracao .cargo ol li.candidatos .parcial .info{height:15px;}
+.boxApuracao .cargo ol li.candidatos .parcial .info > div{float:left;}
+.boxApuracao .cargo ol li.candidatos .parcial .info .nome-candidato{margin:0;font-size: 15px;font-weight: 600;color: #192D49;}
+.boxApuracao .cargo ol li.candidatos .parcial .info .eleito,.boxApuracao .cargo ol li.candidatos .parcial .info .segundo-turno{color: #FFF;padding: 0 5px 0;border-radius: 4px;background: #D7803E;}
+.boxApuracao .cargo ol li.candidatos .parcial .info .eleito{background: #3FA93C;}
+.boxApuracao .cargo ol li.candidatos .parcial .info .segundo-turno{background: #D7803E;}
+.boxApuracao .cargo ol li.candidatos .parcial .info .nun-votos{width:155px;font-family: Arial, helvetica, Sans-serif;font-size: 11px;color: #9e9c9b;}
+.boxApuracao .cargo ol li.candidatos .parcial .info .percentagem-votos{float:right;margin-top: -6px;font-size: 18px;font-weight: 700;color: #0091C5;}
+.boxApuracao .cargo ol li.candidatos .parcial .progressBar{position:relative;height:7px;margin:10px 0 0 5px;border-radius:10px;background: #E7F0F5}
+.boxApuracao .cargo ol li.candidatos .parcial .progressBar .percentagem{position:absolute;top:0;left:0;width:155px;height:7px;border-top-left-radius: 10px;border-bottom-left-radius: 10px;background: #A4B5C0;}
+.boxApuracao .cargo ol li.candidatos .parcial .partido{font-family: Arial, helvetica, Sans-serif;font-size: 10px;font-weight: 600;color: #9e9c9b;text-transform: uppercase;}
+.boxApuracao .cargo .votos-apurados{margin: 20px 0 0;}
+.boxApuracao .cargo .estatisticas{margin: 10px 0 0;}
+.boxApuracao .cargo .votos-apurados h3{margin:0;font-family: Arial, Helvetica, Sans-serif;font-size: 12px;font-weight: 700;color: #192D49;}
+.boxApuracao .cargo .votos-apurados h3 span{margin:0 20px;font-size: 11px;font-weight: normal;color: #9e9c9b;}
+.boxApuracao .cargo .votos-apurados h3 strong{float:right;font-size: 14px;color: #9A8A6D;}
+.boxApuracao .cargo .votos-apurados ul{list-style: none;margin: 10px 0;padding: 0;border-bottom:1px solid #E9E9E9;}
+.boxApuracao .cargo .votos-apurados ul li{width:25%;float:left;margin-bottom:10px;font-family: Arial, Helvetica, Sans-serif;}
+.boxApuracao .cargo .votos-apurados ul li span{display:block;margin-bottom:4px;}
+.boxApuracao .cargo .votos-apurados ul li .tipo-votos{font-size: 10px;font-weight: 700;color: #71654E;text-transform: uppercase;}
+.boxApuracao .cargo .votos-apurados ul li .percentagem{font-size: 14px;font-weight: 800;color: #9A8A6D;}
+.boxApuracao .cargo .votos-apurados .progressBar{position: relative; height: 7px; margin: 5px 0 0; border-radius: 10px; background: #E7F0F5;}
+.boxApuracao .cargo .votos-apurados .progressBar .percent{position: absolute; top: 0; left: 0; width: 155px; height: 7px; border-top-left-radius: 10px; border-bottom-left-radius: 10px; background: #C2B9A9;}
+.boxApuracao .cargo .estatisticas ul{font-family:Helvetica, Sans-serif; list-style: none;margin: 0;padding: 0;}
+.boxApuracao .cargo .estatisticas ul li{width:33%;float:left;}
+.boxApuracao .cargo .estatisticas ul li span,
+.boxApuracao .cargo .estatisticas ul li strong{display:block;margin-bottom:4px;}
+.boxApuracao .cargo .estatisticas ul li span{display:block;margin-top:4px;margin-bottom:4px;font-size: 10px; font-weight: 700; color: #9e9c9b; text-transform: uppercase;}
+.boxApuracao .cargo .estatisticas ul li span.secoes{display:table-cell;vertical-align:bottom;margin:0;height:28px;margin-bottom:4px;}
+.boxApuracao .cargo .estatisticas ul li strong{margin-bottom:4px;  font-size: 14px;color: #9e9c9b;}
+.boxApuracao .cargo .estatisticas ul li span i{margin-bottom:4px;  font-size: 11px; font-weight: normal; color: #9e9c9b; font-style: normal}
+.boxApuracao #filtro-estado {position: absolute;top: 9px;right: 15px;width: 50%;height: 33px;line-height: 33px;font-size: 16px;font-weight: 600;color: #3B4456;padding: 0 8px 4px 8px;border-radius: 4px;border: 2px solid #EAECEE;}
+
+.boxApuracao .candidatos-estaduais{width:100%;float:left;margin-top:10px;padding:10px 0;border-top:1px solid #E9E9E9;}
+.boxApuracao .candidatos-estaduais .filtro{position:relative;padding:12px;border-left: 1px dotted #ccc;}
+.boxApuracao .candidatos-estaduais .filtro:first-of-type{border:0;}
+.boxApuracao .candidatos-estaduais .filtro h3{margin: 0; font-size: 18px; font-weight: 600; color: #464646; text-transform: uppercase; border-bottom: 1px solid #E9E9E9;}
+.boxApuracao .candidatos-estaduais .filtro h3 span{font-size: 15px;}
+.boxApuracao .candidatos-estaduais .filtro input[type=text]{display:block;width:100%;height: 33px;line-height: 33px;margin:15px 0 25px;font-size: 18px; color: #3B4456; text-indent:8px; border-radius: 4px; border: 2px solid #EAECEE; background: url(../img/eleicoes/sprite.png) no-repeat 100% 3px}
+.boxApuracao .candidatos-estaduais .filtro span.atualizacao { margin: 3px 2px 0; text-align: left; float: none;}
+.boxApuracao .candidatos-estaduais .filtro ul{margin:0 0 10px;padding:0;list-style:none;}
+.boxApuracao .candidatos-estaduais .filtro ul > li:first-child{ border-bottom: 1px solid #E9E9E9;}
+.boxApuracao .candidatos-estaduais .filtro ul li.header span{height:30px;line-height:30px;float: left; margin: 0; font-size: 15px; font-weight: 600; color: #9e9c9b;}
+.boxApuracao .candidatos-estaduais .filtro ul li.header span.posicao{width: 55%;overflow: hidden;}
+.boxApuracao .candidatos-estaduais .filtro ul li.header span.partido{width: 50px;}
+.boxApuracao .candidatos-estaduais .filtro ul li.header span.coligacao{width: 95px;}
+.boxApuracao .candidatos-estaduais .filtro ul li.header span.votos{width: 60px; float:right;}
+.boxApuracao .candidatos-estaduais .filtro ul.pagination{width:70px;height:25px;margin:0 0 10px;float:right;padding:0;list-style:none;}
+.boxApuracao .candidatos-estaduais .filtro ul.pagination li{display:block;width:25px;height:25px;overflow:hidden;text-indent:-999px;float: left; margin: 0 10px 0 0; font-size: 15px; font-weight: 600; color: #9e9c9b; }
+.boxApuracao .candidatos-estaduais .filtro ul.pagination li:first-child{background:url(../img/bg-nav-galerias.png) -25px -75px}
+.boxApuracao .candidatos-estaduais .filtro ul.pagination li:last-child{background:url(../img/bg-nav-galerias.png) -25px -50px;}
+.boxApuracao .candidatos-estaduais .filtro ul.pagination li:first-child.disabled {background:url(../img/bg-nav-galerias.png)}
+.boxApuracao .candidatos-estaduais .filtro ul.pagination li:last-child.disabled {background:url(../img/bg-nav-galerias.png) -50px -75px;}
+.boxApuracao .candidatos-estaduais .filtro ul.pagination li a{display:block;width:25px;height:25px;}
+
+.boxApuracao .candidatos-estaduais .filtro .candidato {border-bottom: 1px solid #E9E9E9;padding: 12px 0;font-size: 15px;font-weight: 600;color: #9e9c9b;}
+.boxApuracao .candidatos-estaduais .filtro .candidato span {display: block;float:left; }
+.boxApuracao .candidatos-estaduais .filtro .candidato span.posicao-nome .eleito {margin-top: -2px; padding: 2px 4px;color:#fff !important;border-radius:4px;background: #3FA93C}
+.boxApuracao .candidatos-estaduais .filtro .candidato span.posicao-nome .colocacao {width: 28px; padding-right:10px; font-family:Arial, Georgia, Sans-serif;font-size:11px; color: #9e9c9b;}
+.boxApuracao .candidatos-estaduais .filtro .candidato span.posicao-nome .nome-canditado { margin-top: -2px; color: #192D49;}
+.boxApuracao .candidatos-estaduais .filtro .candidato span.partido,.candidatos-estaduais .filtro .candidato span.colicacao,.candidatos-estaduais .filtro .candidato span.votos {font-family: Arial, Helvetica, sans-serif; font-size: 11px;}
+.boxApuracao .candidatos-estaduais .filtro .candidato span.posicao-nome {width: 55%;padding-right:10px;font-size: 15px;font-weight: 600;}
+.boxApuracao .candidatos-estaduais .filtro .candidato span.partido {width: 30px; min-width: 30px; max-width: 30px;  padding-right:10px;}
+.boxApuracao .candidatos-estaduais .filtro .candidato span.votos {float: right; width: 60px; min-width: 60px; max-width: 60px;}
+.boxApuracao .candidatos-estaduais .filtro .candidato span.colicacao {width: 95px;padding-right:10px;}
+
+.boxApuracao .candidatos-estaduais > select{width: 65%;height: 33px;line-height: 33px;margin: 15px 10px 0 15px;font-size: 18px;color: #3B4456;text-indent: 8px;border-radius: 4px;border: 2px solid #EAECEE;}
+.boxApuracao .filtro .legenda{display:block;float:left;margin-top: 5px;padding: 0 5px; font-size: 14px; color: #fff; text-transform: uppercase; border-radius: 4px;background: #3FA93C;}

@@ -1,0 +1,44 @@
+// box horoscopo
+.box-horoscopo {position:relative; margin:10px 0 0; border-top: 2px solid #006b85;
+	ul {margin:20px 0; padding:0 10px;
+		li {position:relative; float:left; width:15%; max-width:315px; margin:3px 0 3px 1%; overflow:hidden;
+			.spacer {width:100%; height:auto;}
+			.sprite {position:absolute; top:0; left:0; max-width:none; max-height:100%;
+				&.aquario {left:0;}
+				&.aries {left:-100%;}
+				&.cancer {left:-200%;}
+				&.capricornio {left:-300%;}
+				&.escorpiao {left:-400%;}
+				&.gemeos {left:-500%;}
+				&.leao {left:-600%;}
+				&.libra {left:-700%;}
+				&.peixes {left:-800%;}
+				&.sagitario {left:-900%;}
+				&.touro {left:-1000%;}
+				&.virgem {left:-1100%;}
+			}
+		}
+	}
+}
+
+.horoscopo {text-align:center;
+	> img {max-width:125px; margin:20px auto 10px;}
+	h1 {margin:0; font-size:24px; font-weight:500; text-transform:uppercase;}
+	p {text-align:left;}
+	span {font-size:24px; display:block;
+		&.periodo {font-family: "Times New Roman", serif; font-size:20px; font-style:italic; color:#6b6b6b;}
+	}
+	.data-publicacao{padding:20px 0 0; font-size:24px; color:#222; text-transform:uppercase;}
+	.aquario {color:#66b5ee;}
+	.capricornio {color:#88c6a7;}
+	.leao {color:#e6a430;}
+	.aries {color:#d6665d;}
+	.touro {color:#cf2227;}
+	.gemeos {color:#c1a231;}
+	.cancer {color:#e1922f;}
+	.virgem {color:#ad85b4;}
+	.libra {color:#649ad5;}
+	.escorpiao {color:#d54d40;}
+	.sagitario {color:#66b7e8;}
+	.peixes {color:#8bd9d6;}
+}

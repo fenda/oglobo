@@ -1,0 +1,119 @@
+.topbar {min-height:40px; background: url(../img/bg_topbar.png) 0 0 repeat-x; position:relative;
+	a {display:block; text-indent:-9999px; height:40px; background: url(../img/sprite.png) -71px 0 no-repeat;
+		&.nav {left:0; background-position: 0 0;}
+		&.search {right:0; background-position: 0 -70px;}
+	}
+}
+.logo {width:113px; margin:0 auto;}
+.nav, .search {position:absolute; top:0; width:60px;}
+
+#main {min-width:240px;}
+.main {position:relative; padding:0;}
+
+#view, #viewSearch {position:absolute; top:40px; left:0; height:100%; overflow:hidden; width:260px;}
+#innerview {position:absolute; top:0; left:0; width:260px; border-bottom:40px solid transparent;}
+#menu, #search-panel {width:260px; position:fixed; top:0; bottom:0; z-index:1000; background:$darkBlue; -webkit-overflow-scroll:touch;}
+.main, #main, #menu, .search-panel {transition:.2s ease-out;}
+#vidro {position:absolute; top:0; left:0; width:100%; height:100%; z-index:999;}
+
+// search panel
+#search-panel {margin-right:-260px; right:0; font-size:18px; line-height:15px;
+	p {margin:5px 15px; color:#ccc;}
+	a {color:#fff;}
+}
+#search-panel #box {height:40px; margin-top:-1px; border-top:1px solid #203A5F; background:#203A5F;
+	input {display:block; width:220px; height:28px; padding:0 8px; margin:5px auto 0; color:#6b6b6b; border:none; @include border-radius(4px); box-shadow:inset 1px 1px 5px #999;}
+}
+#search-panel ul#retorno {margin:0; padding:0;
+	li {border-bottom:#243B5B 1px solid;
+		a {display:block; height:100%; padding:12px 10px;}
+	}
+}
+
+#loadSearch {width:100%; height:50px; margin:15px auto; text-align:center; color:#828FA0;
+	img {display:block; margin: 0 auto;}
+}
+
+#main.active-search .main {right:260px;}
+#main.active-search {
+	.menu, .search-panel {right:260px; width:260px;}
+}
+
+
+// menu
+#menu {margin-left:-260px; width:260px; left:0;}
+#main.active-menu .main {left:260px;}
+#main.active-menu .menu {left:260px; width:260px;}
+
+.menu header {width:100%; height:40px; border-bottom:3px solid #122C4E; background:#1f3a5f;
+	#info {height:40px; line-height:40px; color:#ccc;
+		p {float:left;margin:0;
+			&:first-of-type {margin:0 5px 0 10px; text-transform:uppercase;}
+			span {padding:0 4px 0 10px;
+				&.max {background: url(../img/spriteBullets.png) -10px -160px no-repeat;}
+				&.min {background: url(../img/spriteBullets.png) -10px -180px no-repeat;}
+			}
+		}
+		img {float:left; width:24px; height:22px; margin:10px 5px 0 3px;}
+	}
+}
+
+.menu ul {padding:0; margin:0;
+	li {
+		&.caderno {border-top:1px solid #253B5A;
+			a {font-size:20px; color:#fff; text-transform:uppercase;}
+			&:first-child {margin-top:1px; border-top:0;
+				a {font-weight:500; font-size:15px; color:#f6f6f6; padding:10px;}
+			}
+		}
+		&.caderno-off {padding:4px 10px; font-size:20px; font-weight:bold; color:#fff; text-transform:uppercase;}
+		a {display:block; padding:4px 10px; font-size:1.17em; font-weight:bold; color:#009AC8;}
+	}
+}
+
+/*compartilhamento*/
+.menu .compartilhamento {margin-top:20px;
+	a {float:left; width:33.333333%; height:70px; @include box-sizing(border-box); font-size:30px; line-height:75px; text-align:center; color:#cdcdcd; background:#152841;
+		&:nth-child(2) {border-left:1px solid #1c314d; border-right:1px solid #1c314d;}
+	}
+}
+
+.artigo-topo {padding:0 10px; margin-top:20px;
+	h1 {font-size:30px; line-height:30px; }
+	h2 {font-size:22px; line-height:22px; font-weight:600;}
+	h1, .artigo-topo h2 {margin:0; padding:10px 0; color:$darkBlue; border-bottom:1px solid #ddd;}
+	.sub-editoria {font-size:30px; color:#303030; text-align:center; text-transform:uppercase; border:none;}
+
+	&.especial-publicitario {margin-top:-20px; background: url(../img/bg-materia-patrocinado.png) repeat-x;
+		.editoria {
+			a {margin-top:16px; font:600 11px/20px Arial, sans-serif; padding:0 8px; color:#fff; letter-spacing:-.025em; border-radius:2px; background:#FFAF00;}
+		}
+	}
+}
+
+.editoria {text-align:center; margin:20px 0;
+	a, b, span, h2 {background:$darkBlue; font-size:24px; text-transform:uppercase; color:#FFF; font-weight:700; padding:4px 20px; margin:0 20px; line-height:25px; display:inline-block;}
+	&.sem-fundo {margin:10px 0;
+		a, b {color:$darkBlue; background:none; font-weight:600;}
+	}
+	i {display:block; font-style:normal; text-transform:uppercase; margin:10px; font-size:25px; font-weight:300;}
+}
+
+/* editoria ela */
+.ela {
+	.topbar {background: #000;}
+	.logo {background: url(../img/sprite.png) -71px 2px;}
+	a.nav {background: url(../img/sprite.png) 0 -296px no-repeat;}
+	a.search {background: url(../img/sprite.png) 0 -366px no-repeat;}
+	.editoria {
+		h1, a, b, span, h2 {background: url(../img/ela/logo@2x.png) no-repeat; -webkit-background-size:contain; background-size: contain; text-indent: -99999px; width: 60px; height: 30px; margin: 0 auto; display: block;}
+		p.sub {background:#000; font-size:24px; text-transform:uppercase;font-weight:700; padding:4px 20px; margin:10px 20px 0; line-height:25px; display:inline-block;
+			a {color:#fff;}
+		}
+	}
+	.especial-publicitario .editoria > a {background:#FFAF00; text-indent:0; width:auto; height:auto; margin-top:16px; display:inline-block;}
+	.box-gentes .editoria > span {background:#000; text-indent:0; width:auto; height:auto; margin:0 20px;}
+	.lista-fatos .editoria > h2 {background:#FFF; width:auto; height:auto; margin:0; text-indent:0;}
+	.destaques h3 {line-height: 27px;}
+	.box-horoscopo .editoria b {background:none; text-indent:0; width:auto; height:auto;}
+}

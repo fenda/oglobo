@@ -1,0 +1,334 @@
+.msg-erro-carregar-dados {line-height:20px;font-size:19px;font-weight:600;color:#E10000;text-align:center;padding:10px 10px 14px;margin:4px 10px;border:1px solid #FFA6A6;background:#FDF0ED;}
+
+// navegacao & botoes
+.nav-interna {margin:15px 0; padding:0 10px;
+	a {display:block; font-size: 19px; color:#0099cc;}
+}
+
+// navegacao entre materias
+.navegacao {border:1px solid #DDD; border-width:1px 0; font-weight:700;
+	div {position:relative; padding:20px 20px 20px 40px; font-size:14px;
+		span {display:block; color:#ccc; text-transform:uppercase; margin-bottom:7px; text-align:right;}
+		strong {font-size:20px; line-height:24px; color:$darkBlue;}
+		i {position:absolute; top:45%; left:0; color:$link; margin-left: 20px;}
+		&.prev {border-bottom:1px solid #DDD;
+			span {text-align:left;}
+		}
+		&.next {padding-left:20px; padding-right:40px;
+			i {left:auto; right:0; margin-right:20px;}
+		}
+		&.inactive {background:#f8f8f8;}
+	}
+	b {
+		strong, i {color:#bbb;}
+	}
+
+}
+
+// rio gastronomia
+#chamada-riogastronomia {position:relative; width:auto; margin:0; font:600 22px Georgia, helvetica, Sans-serif; font-style:italic; color:#333; text-indent:95px; background:#EFEFEF;
+	a {padding:25px 10px 15px 20px;display:block;width:100%;height:100%;background: url(../img/arrow-riogastronomia.png) no-repeat 380px 55px;
+		i {position:absolute;top:20px;left:20px;display:block;width: 70px;height: 60px;background: url(../img/banner-riogastronomia.png) no-repeat;background-size: 70px 60px;}
+		span {display:block;}
+	}
+}
+
+// publicidade
+.banner {padding:7px 0; text-align:center; @include box-shadow(0, 1px, 3px, #999, inset); background: #fff url(../img/bg-banners.png);
+	img {display:block; max-width:100%; margin:0 auto;}
+}
+
+.base-selo-patrocinio {position:absolute; top:0; left:0; width:100%; height:0; border-top:1px solid #ccc; background:#F3F3F3; z-index:100;}
+.selo-patrocinio {position:absolute; top:0; left:50%; margin-left:-70px; width:140px; height:34px; z-index:100000; border-radius:0 0 4px 4px; @include box-shadow(0, 2px, 3px, #bcbcbc); background:#fff; z-index:100000;
+	img {display:block; margin:0 auto;}
+}
+
+#pub-interstitial {position:fixed; top:50%; left:50%; transform: translate(-50%, -50%); z-index:100000;
+	&.banner {background:none; box-shadow:inset 0px 0 0 #FFF;}
+}
+
+
+// enem
+.selos {margin:40px 10px 10px; border:1px solid #8592A0; text-align:center; text-transform:uppercase; color:#666;
+	.selo-tecnologia {
+		> a {display:block; margin: 0 auto 15px; width:134px;}
+	}
+	.selos-conteudo {
+		> div {width:200px; margin:0 auto 15px;}
+	}
+}
+
+// compartilhmaneto novo ajustes
+.artigo-interacao {padding:0 24px; margin:0;
+	div {padding:25px 0;}
+}
+
+.compartilhamento {width:100%; float:left;
+	ul {margin:0; padding:0; text-align:center; display:flex; flex-wrap:wrap; list-style:none;
+		li {flex:1 1 auto;}
+	}
+	a {display:inline-block; width:20px; height:20px; color:#FFF; border-radius:2px;}
+	.fb a {background:#395799; font-size:18px; line-height:25px;}
+	.tw a {background:none; color:#00B0F9; font-size:22px; line-height:20px;}
+	.gp a {background:#DA4B3E; line-height:23px;}
+	.in a {background:#007BB6;}
+	.wa a {background:none; color:#54DB49; font-size:26px; margin-top:-8px;}
+}
+
+// especial publicitario
+.ad-carrossel {border-top:2px solid #999; overflow:hidden; margin: 20px 0;
+	h3 {background:url(../img/ad-background.png) repeat-x 0 0; text-align:center; margin: 0 0 15px; padding-top: 10px;
+		span {color:#fff; background:#edae00; text-transform:uppercase; display: inline-block;padding: 3px 10px; border-radius:2px; font:12px Arial, sans-serif;}
+	}
+	.cycle-slideshow {position:relative; margin:0 10px; height:315px;}
+	iframe {margin:auto; display:block;}
+	img {width:100%; height:auto;}
+	.center {float:right; margin-right:10px;}
+	#custom-caption {font:italic 16px "Georgia",serif; color:#a0a09f; margin-right:10px; padding-top:8px;}
+	.cycle-overlay {font-size:24px; line-height:25px; color:#25314a; font-style: italic; height:117px; padding-top:15px;}
+	.cycle-pag {
+		a {background:url(../img/indicador-navegacao.png) no-repeat; display:inline-block; width:33px; height:33px; text-indent:-99999px;
+			&.cycle-prev {background-position:0 0;}
+			&.cycle-next {background-position:-427px 0;}
+		}
+	}
+}
+
+// paginas de erro
+.paginas-estaticas {padding:0 10px; margin: 0 auto;
+	#errorPage {width:122px; height:110px; margin: 25px auto 10px; background: url(../img/icoPagError@2x.png); background-size:122px 110px;}
+	h1, span {text-align:center;}
+	h2, span {color:#404041;}
+	h1, h2, span {line-height:24px;}
+	h1 {font-size:20px; color:#012E4F; text-transform:uppercase;}
+	h2 {font-size:18px; margin:15px 0 10px; font-weight:700; }
+	span {font-size: 22px; display:block; margin:20px 0 30px;}
+	ul {margin:0; padding:0;
+		li {width:48%; float:left; text-align:center;
+			#continuar {float:right;}
+			a {font-size:18px; color:#008fc9;}
+		}
+	}
+	a {display:block; height:40px; line-height:40px; font-size:16px; font-weight:600; color:#008fc9; border-top:2px solid #E9E9E9;}
+}
+
+
+// plantao + post corpo (horoscopo + blogs)
+.plantao-corpo, .post-corpo {position:relative; padding: 0 10px; margin-bottom:10px;
+	p {font:19px/20px "Times New Roman", serif;}
+	a {color: #09c;}
+	.foto figure img, p img {max-width: 100%;}
+}
+
+.lista-ler-plantao {margin:0; padding:0;
+	li {margin-bottom:8px; padding-bottom:10px; border-bottom:1px solid #ddd;
+		&:last-child{border-bottom:0;}
+	}
+	.intem {float:left; width:45px; margin:25px 10px 10px 10px; text-align:center;
+		div {font-weight:600;color:#666;
+			&.hora {line-height:22px; font-size:20px; border-bottom:1px solid #ddd;}
+			&.data {font-size:16px; font-weight:600; color:#999;}
+		}
+	}
+	.noticia {display:table; margin:0 10px 0 0;
+		.jornal {font-size:18px; color:#333;}
+		a {line-height:22px; font-size:22px; font-weight:bold; color:$darkBlue;}
+	}
+}
+
+// elementos materia | coluna
+.artigo-midia {margin: 20px 0 0;
+	figcaption {padding:10px; font:14px/18px Arial, sans-serif; color:#666;}
+}
+
+.video-mobi {margin:0 auto; border:1px solid #eee; background: #F0F0F0; width: 300px !important; height: auto !important;}
+.video-mobi iframe {display:block; margin:0 auto; height: auto !important; width: auto !important; }
+
+
+
+#videoMateria, p .multimidia  {display:block; position: relative; height: auto; margin:0 auto;background:#F0F0F0;}
+#videoMateria iframe, p .multimidia iframe, .post-corpo iframe { display:block;width:640px;height:480px;margin:0 auto; }
+
+
+.widget header { border-top: 2px solid #336b83; text-align: center; text-transform: uppercase; font-size: 18px; line-height: 36px; font-weight: 700; }
+
+// register wall
+.register-wall {
+	h2, h3 {text-align:center;padding:0 20px;color:#012d4d;}
+	h2 {margin:25px 10px 0;line-height: 26px;font-size: 24px;font-weight:600;text-transform:uppercase;}
+	h3 {margin: 13px 10px 0;line-height:22px;font-size: 21px;font-weight:400; color:#999;}
+}
+
+.content-paywall {margin:30px 5% 0; border-top:1px solid #CCC; padding-top:40px;
+	iframe {display:block; margin:0 auto; border:none;}
+}
+.reg-gc {overflow:hidden;
+	iframe {margin-top: -115px;}
+}
+
+
+iframe[src^='//instagram'], iframe[src^='//vimeo'],.coluna-corpo > p > iframe,.coluna-corpo > iframe{display:block;margin:0 auto;}
+iframe[src^='//instagram']{display:block;margin:0 auto !important;width: 100%;height:720px !important;}
+
+// apuracao carnaval
+.apuracaoCarnaval {
+	p {color:#5a5a5a; padding:0; text-align:center;
+		&.title {font-weight:600; font-size:30px; line-height:35px; color:$darkBlue; padding:30px 0 10px; border-bottom:1px solid #e3e4e5; margin:0; width:100%;}
+		span {display:inline; margin:0 0 0 3px; font-size:1em;}
+	}
+	table {width:100%; font-size:18px;
+		.pos {width:25px; text-align:right; padding-right:10px; font-weight:800;}
+		.pts {width:25px; text-align:left; padding-left:10px;}
+	}
+}
+
+// estaticas
+.text-only {padding:0 20px; font-size:18px;
+	h2, h6, h4 {text-transform:uppercase;}
+	h2 {margin:25px 10px 0; line-height:30px; font-size:28px; font-weight:300; text-align:center;}
+	h6 {margin:0; font-size:18px; font-weight:600;}
+	p {font-size:18px;}
+	.alert {display:block; text-align:center; border:1px solid #CCC; border-width:1px 0; padding:10px 0; display:none;
+		h4, p {margin:0;}
+	}
+}
+// ultimas noticias
+.ultimasNoticias {
+	#opcoes-filtro {padding:0 3%;
+		div {margin-bottom:15px;}
+		p {margin:0 0 5px 0; font-size:15px; color:#a9a9a9; text-transform:uppercase;}
+		select {height:35px; text-indent:5px; font: 700 13px Arial,sans-serif; color:#1e96c8; border:1px solid #ddd; border-radius:2px; width:100%;}
+	}
+
+	.hide {display:none;}
+	.load_generico {background: url(../img/loadinfo.net.gif) center no-repeat; width:100%; height:100px;}
+	.mais-ultimas {text-align:center; display:block; padding:10px 0; font-size:18px; text-transform:uppercase; font-weight:700; background:#f9f9f9; border-radius:3px; border:1px solid #bbb; box-shadow:0 1px 0 rgba(0,0,0,.1); width:90%; margin:40px 5%;}
+
+	.destaques.principal.video article {background:#000;
+		h2 {color:#FFF; position:relative; font-size:22px; margin-top:10px; margin-bottom:0;}
+	}
+	.video article #video {width:320px; position:relative; margin:0 auto;}
+	.lista-vazia {padding:0 5%; font-size:21px; line-height:22px}
+}
+
+// publicidade patr
+.publ-patrocinada {position:relative; margin:0 10px 40px; background: url(../img/bg-materia-patrocinado.png) repeat; text-align:center; border-bottom:3px solid #FFAF00; padding:10px 0 20px;
+	p {position:absolute; width:280px; left:50%; margin:0 0 0 -140px ;bottom:-1px; font:600 10px/1.3 Arial, sans-serif; color:#fff; text-transform: uppercase; border-radius:2px; background:#FFAF00;}
+}
+
+.artigo-video iframe{display: block;margin: 0 auto}
+.embed-social.video iframe {display:block;margin:0 auto !important;background: #F0F0F0; width: 300px !important; height: 200px !important;}
+
+
+/*twitter na matéria*/
+.artigo-twitter {max-width:500px;margin:10px auto 20px;}
+
+.embed-social {display:block; margin:20px auto !important; text-align:center;}
+.embed-social > iframe {display:block; margin:0 auto !important;}
+
+// paywall
+.msg-paywall {position:fixed; right:0; bottom:200px; background:#FFF; box-shadow:0 0 4px #666; width:300px; right:0; z-index:999;
+	img {float:left;}
+	.fechar {position:absolute; top:2px; right:8px; width:auto; margin:0; font-weight:700; padding:0; font-size:25px}
+	p {padding: 16px 0; width: 164px; float:right; margin: 0 21px 0 0; font: 300 17px/1 OgloboCondensed, sans-serif;
+		span {display:block;}
+	}
+}
+
+.barra-paywall {position:fixed; bottom:-90px; left:0; width:100%; height:90px; margin:0 auto; z-index:9999; text-align:center; font-size:19px;
+	div {position:relative; height:115px; margin:0 5px; background:#01577C; border-radius:4px 4px 0 0; @include box-shadow(-1px, -1px, 5px, #7b7b7b);}
+	h4 {margin:0 auto; line-height:25px; font-weight:300; color:#fff; padding-top:7px; width: 85%;}
+	a.close {width:14px; height:14px; position:absolute; margin:9px 5px 0 0; right:0;
+		img {margin-top:-11px; width:10px; height:10px;}
+	}
+	ul {list-style:none; margin:10px auto 0; padding:0;
+		li {width:110px; display:inline-block; ;border-radius:4px; border:1px solid #fff; margin:0 9px; padding:3px 0 4px;
+			a {font-weight:300; color:#fff;}
+		}
+	}
+}
+
+.conteudo-assinante {text-align:center; padding:0 20px; max-width:300px; margin:0 auto; min-height:400px;
+	p {font-size:21px; color:#6d6d6d;
+		&.title {font-size:24px; color:#032e4e; text-transform:uppercase; font-weight:600;}
+		&.login {color:#032e4e; font-size:18px;
+			a {color:$link; text-decoration:underline;}
+		}
+		&.back a {color:$link; text-decoration:underline; font-size:22px;}
+	}
+	hr {border-width:1px 0 0;}
+	ul {margin:0; padding:0;
+		li a {background:$link; text-transform:uppercase; color:#FFF; font-size:17px; font-weight:600; width:180px; display:inline-block; border-radius:4px; padding:10px 0; box-shadow: 0 2px 2px #ccc;}
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.galeria-videos .conteudo > p {padding-left:3%;}
+	.galeria-videos .conteudo .mais-videos {padding-right:3%;}
+	.galeria-videos .videoInfo .tag, .galeria-videos .videoInfo p.title {padding:0 3%;}
+	.galeria-videos .videoInfo p.duration {margin-left:3%;}
+}
+
+
+@media screen and (min-width: 240px) and (max-width: 320px) {
+	.footer {overflow:hidden;}
+	//.box-clubes ul li img{width:100%;}
+	//.manchete-principal .scroller ul > li article a h3 {bottom: 25px;font-size: 22px; line-height: 22px;}
+	//.destaques.principal a h2 { font-size: 24px; line-height: 22px; }
+	//.destaques.principal a > h2 > b.urgente {font-size:15px;}
+	#videoMateria iframe, p .multimidia iframe, .post-corpo iframe{width:100%;height:165px !important;}
+	.coluna-corpo .artigo-video iframe,.video-mobi iframe{width:100%!important;height:180px!important}
+	iframe[src^='//instagram']{height:370px!important}
+
+}
+
+@media screen and (min-width: 220px) and (max-width: 320px) {
+	.materia-capitulo #fixedHeader h1{width: 50%;}
+	#chamada-riogastronomia a {padding: 30px 10px;font-size: 18px;background: none;}
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+	.materia-capitulo #fixedHeader h1{width: 60%;}
+	.box-clubes ul li img{width:100%;}
+	#videoMateria iframe, p .multimidia iframe, .post-corpo iframe{width:100%;height:233px !important;}
+	.coluna-corpo .artigo-video iframe,.video-mobi iframe{width:100% !important;height:150px !important;}
+	iframe[src^='//instagram']{height: 420px !important;}
+}
+
+@media screen and (min-width: 481px) and (max-width: 760px) {
+	.materia-capitulo #fixedHeader h1{width: 70%;}
+	#videoMateria iframe, p .multimidia iframe, .post-corpo iframe{width:100%;height:345px !important;}
+	.coluna-corpo .artigo-video iframe,.video-mobi iframe{width:100% !important;height:345px !important;}
+	iframe[src^='//instagram']{height: 575px !important;}
+}
+
+@media only screen and (min-device-width : 320px ) and (orientation : landscape) {
+	.artigo-imagem { padding: 0 10px; }
+	.artigo-imagem > div { background: #f0f0f0; }
+	.artigo-imagem img {display:block; margin: 0 auto; max-width: 320px; min-width: 0;}
+	.artigo-imagem figcaption { padding: 10px 0; }
+	.pag-coluna .coluna-corpo > .artigo-imagem {padding:0 10px;}
+	.banner img,.banner img,footer .banner img{width:auto;max-width:100%;}
+
+	iframe[src^='//instagram']{height: 565px !important;}
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), only screen and ( min--moz-device-pixel-ratio: 1.5), only screen and ( -o-min-device-pixel-ratio: 2/1) {
+	.topbar {background-image: url(../img/bg_topbar@2x.png); background-size: 2px 40px;}
+	.logo, .nav, .footer .top:after, .fotogaleria #wrapperNav a {background-image: url(../img/sprite@2x.png); background-size: 200px 283px;}
+	.artigo-topo .data-cadastro:before{background-image: url(../img/sprite@2x.png); background-size: 200px 283px;}
+
+	.link-top a:after {background-image: url(../img/sprite@2x.png); background-size: 200px 283px;}
+	#main .menu #cadernos li a {background: url(../img/spriteMenu@2x.png) no-repeat; background-size:92px 510px;}
+
+	.box-editoria header .collapse-box {background-image:url(../img/spriteBullets@2x.png); background-size: 30px 350px;}
+	.box-editoria header .close {background-image:url(../img/spriteBullets@2x.png); background-size: 30px 350px;}
+	.artigo-corpo .opacity-hide a#leia-mais {background-image: url(../img/spriteBullets@2x.png); background-size: 30px 350px;}
+	.transito .scroll-wrapper .prev,.transito .scroll-wrapper .next{background:#fff url(../img/seta-slide@2x.png) center no-repeat;background-size:11px 19px}
+	.pag-coluna .data-publicacao:before{background:url(../img/sprite@2x.png) -70px -136px;background-size:200px 283px}
+	//.faq dt span{background:url(../img/spriteBullets@2x.png) -8px -224px no-repeat;background-size:30px 350px}
+	//.faq dt span.active{background:url(../img/spriteBullets@2x.png) -8px -205px no-repeat;background-size:30px 350px}
+	#main .menu header div#info p span.max{background:url(../img/spriteBullets@2x.png) -10px -162px no-repeat;background-size:30px 350px}
+	#main .menu header div#info p span.min{background:url(../img/spriteBullets@2x.png) -10px -182px no-repeat;background-size:30px 350px}
+	.register-wall ul li span{background:url(../img/spriteRegisterWall@2x.png);background-size:47px 120px}
+}

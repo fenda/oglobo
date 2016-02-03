@@ -1,0 +1,56 @@
+.agenda {
+	* {@include box-sizing(border-box);}
+	.evento, .calendar {width:100%; max-width:300px; margin:0 auto;}
+	.calendar {
+		h3 {color:#25314a; font-size:35px; font-weight:600; margin:0; text-align:center;}
+		p {color:#666; text-align:center; font-size:17px; line-height:20px; margin:0 0 20px;}
+	}
+	#datepicker {float:left; width:100%;
+		.ui-datepicker {width:100%; border:none; font:500 25px Oglobocondensed, sans-serif; text-align:center;
+			.ui-datepicker-header {border:none; color:#1e96c8; text-transform:uppercase; margin-bottom:10px; font-weight:500; position:relative;}
+			.ui-datepicker-title {border:1px solid #bbb; @include border-radius(3px); box-shadow:0 3px 0 #e5e5e6; padding:8px 0; width:60%; margin:0 auto;}
+			th {font-weight:800; font-size:15px;}
+			table {font-size:20px; text-align:center; width:100%;}
+			thead {line-height:34px;}
+			td {padding-bottom:4px;
+				span, a {text-align:center; display:inline-block;}
+				a {border:1px solid #1e96c8; width:37px; height:37px; line-height:36px; @include border-radius(40px); color:#1e96c8;}
+				&.ui-datepicker-current-day a {background:#1e96c8; color:#FFF;}
+			}
+			.ui-datepicker-prev, .ui-datepicker-next {top:2px; left:2px; position:absolute; width:40px; height:40px;
+				span {background: url(../img/nav_agenda.png) no-repeat;text-indent: -9999px;display: block;width: 10px;height: 16px;position: relative;margin: 12px auto; top:0; left:0;}
+			}
+			.ui-datepicker-next {left:auto; right:2px;
+				span {background-position: 100% 0;}
+			}
+		}
+		.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {background:#1e96c8; color:#FFF;}
+		.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {pointer-events:none;
+			a {border:none;}
+		}
+	}
+	.evento {
+		&:after {content:''; display:block; clear:both;}
+		.data {float:left; color:#1e96c8; font-weight:300; text-align:center; font-size:50px; line-height:37px; width:100%; padding:20px 15px 10px;
+			p {margin:0;}
+			span {text-transform:uppercase; font-size:25px; line-height:25px;}
+		}
+	}
+	.col {display:table;
+		.item {width:100%; border:1px solid #bbb; box-shadow: 0 0 3px rgba(0,0,0,.2); margin-bottom:10px;}
+		h3, p {padding:10px 15px 0; margin:0;}
+		h3 {color:#25314a; font-size:25px; font-weight:500; line-height:22px;}
+		p {font: 12px/21px Arial, sans-serif; color:#666;}
+		.info {border-top:1px solid #ddd; padding:10px 15px 20px; margin-top:15px;
+			p {padding:8px 0 0; font:20px/.8em Oglobocondensed, sans-serif; color:#25314a;
+				span {display:block; font-size:16px;}
+				a {color:#1e96c8; font-size:15px; font-weight:600; margin-left:7px;
+					&.closed {color:#25314a; pointer-events:none;}
+				}
+			}
+		}
+	}
+	.noEvent {height:150px;
+		p {font-size:16px; text-align:center;}
+	}
+}

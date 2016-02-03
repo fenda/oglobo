@@ -1,0 +1,35 @@
+// box
+.transito {border-top:2px solid #006b85;
+	.scroll-wrapper {position:relative; margin-bottom:10px;
+		&:before, &:after {content:""; position:absolute; top:0; width:3px; height:100%; background:#0097c5; z-index:10000;}
+		&:after {right:0;}
+		ul {margin:0;
+			li {padding:0 10px; width:100%;
+				h3 {margin:0; padding:0 25px; font-weight:normal; color:#666;
+					b {color:#1c314d;}
+				}
+			}
+		}
+		.disabled {opacity:.2;}
+		.prev, .next {position:absolute; top:0; width:25px; height:100%; overflow:hidden; text-indent:-999px;background:white url(../img/seta-slide.png) center no-repeat; z-index:999;}
+		.prev {left:3px; transform: rotate(180deg);}
+		.next {right:3px;}
+	}
+	*, *:before, *:after {@include box-sizing(border-box);}
+}
+
+// pagina
+.transito {margin-bottom:20px;
+	.lista-plantao {padding:0;
+		li {color: #1c314d; display: table; border-left: 4px solid; border-right: 4px solid; font: 14px/14px Arial, sans-serif;
+			div {display: table-cell; padding: 10px; border-bottom: 1px solid #ccc; color:#333; 
+				&.hora {width:60px; text-align:center; font-weight:bold; color:#1c314d;}
+				&.mensagem {width:100%;}
+			}
+		}
+		li:last-child div {border-bottom:none;}
+	}	
+	.load {margin:0 10px;}
+}
+
+.transito-topo .editoria h2 {background:#FFF; color:#1c314d; font-weight:600; margin:0;}

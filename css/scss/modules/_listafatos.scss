@@ -1,0 +1,69 @@
+.lista-fatos .editoria > h2 {background:#FFF; color:#1c314d; font-weight:600; margin:0;}
+
+#listaDeFatos {
+	figure {float:left; margin:0;}
+	figcaption {margin:0 10px; padding-bottom:10px; font:19px/1 "Times New Roman", serif; color:#222;
+		a {color:#0097c5;}
+	}
+	img {display:block; max-width:100%; margin:0 auto;}
+	b {font-size:14px; font-weight:600; padding:2px 5px; margin-right:10px; background:$link; color:#FFF;}
+}
+
+.listadez {margin-bottom:10px;
+	#wrapperNav {text-align:center; width:140px; margin:0 auto 12px;
+		a {width:25px; height:25px; overflow:hidden; text-indent: -999px; background: url(../img/bg-nav-galerias.png) no-repeat;
+			&.prev {float:left; background-position:-25px -25px;
+				&.disabled {background-position:0 0;}
+			}
+			&.next {float:right; margin-left:5px; background-position:-25px 0;
+				&.disabled {background-position:-0px -25px;}
+			}
+			&.disabled {visibility:hidden}
+		}
+		span {line-height:25px; font-size:18px; color: #222;}
+	}
+	#wrapperlistadez {
+		div {opacity:0; height:auto !important;}
+		figure {
+			div {opacity:1; display:block; background:#f0f0f0;}
+			> span {display:block; margin:5px 10px 10px; font: italic 17px/20px "Times New Roman", serif; color:#777; text-align:right;}
+		}
+		ul {list-style:none; float:left; width:100%; height:100%; padding:0; margin:0; text-align:left;}
+		.titulo {display:block; margin:0 0 10px; font-family: 'OgloboCondensed', Arial, sans-serif; line-height:20px; font-weight:700;}
+		.link {display:inline-block; margin:10px; font:600 16px/20px 'OgloboCondensed', Arial, sans-serif; color:#222;
+			a {font-weight:700; color:$link;}
+		}
+	}
+	figure {
+		.video {position:relative; padding-bottom:56.25%; padding-top:25px; height:0;
+			iframe {position:absolute; top:0; left:0; width:100%; height:100%; border:none;}
+		}
+		.video-globo {background:#f0f0f0;
+			> div {width:300px; margin:0 auto;}
+		}
+		> div.posicao-video {background:none;}
+	}
+}
+
+#mais-listas {margin-bottom:20px;
+	#bt-mais-listas {display:block; width:25px; height:40px; margin:0 auto; background:url(../img/bg-mais-listas.png) no-repeat 0 0; background-size:200%;
+		&.active {background-position:-25px 0;}
+	}
+	#outras-listas {display:none; margin:10px auto 20px; height:250px;}
+}
+
+.listafatos {position:relative; margin-bottom:10px; text-align:center;
+	ul {padding:0; margin:0;}
+	span {display:block; margin:10px 30px 10px; line-height:20px; font-family: 'OgloboCondensed', Arial, sans-serif; font-weight:700;}
+	#wrapperNavFatosRelacionados {margin-top:20px;
+		a {z-index:99; position:absolute; top:60px; width:25px; height:25px; text-indent:-999px; background: url(../img/bg-nav-galerias.png) no-repeat;
+			&.prev {left:10px; background-position:-25px -25px;
+				&.disabled {background-position: 0 0;}
+			}
+			&.next {right:10px; margin-left:5px; background-position:-25px 0;
+				&.disabled {background-position: -0px -25px;}
+			}
+			&.disabled {visibility:hidden}
+		}
+	}
+}

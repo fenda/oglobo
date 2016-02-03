@@ -1,0 +1,53 @@
+.fale-container {width:92%; max-width:600px; padding:0 4%; margin:20px auto 40px;
+	strong, b {font-weight:600;}
+	.heading {color:#2d4c72; font-size:35px; margin:40px 0 0;}
+	.description {
+		p {font-size:20px; line-height:25px; margin:20px 0 0; color:#333;
+			strong, span {text-transform:uppercase;}
+			a {font-weight:600; color:#4A90E2;}
+		}
+	}
+	&#message {text-align:center; margin:40px 0; font-size:19px; color:#333; font-weight:600; border:1px solid #CCC; padding:30px 0; background:#fbfbfb; display:none;}
+}
+
+.fale-conosco {
+	#envie {border:1px solid #bbbbbb; margin:40px 0 0; padding:5%; font: 12px/1 Arial, sans-serif;
+		p {color:#999; margin:0 4px 10px;
+			&.fields {text-align:right; font: italic 10px/1 Arial, sans-serif;}
+			&.reg {display:table; font-style:normal; line-height:1.3;
+				input {margin-right:5px;}
+				label {text-align:left; font-size:12px; font-weight:normal; line-height:inherit; margin-right:0; width:auto; float:none;}
+			}
+			&.assuntoSubject {padding-left:123px; line-height:15px; margin:10px 0; font-style:italic; font: 500 16px/1.2 'OgloboCondensed';}
+			&.error {color:#a00; font-style:italic; font-size:12px; margin:6px 0 0; display:none; padding:3px 6px;}
+			&.small-prints {font: 600 15px/1.3 'OgloboCondensed'; text-align:center; margin-top:20px;}
+		}
+		ul {padding:0;
+			li {margin-bottom:15px;
+				&.error {
+					input, textarea {border: 1px solid #a00;}
+					p.error {display:block;}
+				}
+			}
+		}
+		label {float:left; font-size:13px; font-weight:bold; line-height:20px; margin-bottom:10px; width:100%;
+			&.label-radio {margin:0 10px 0 5px; font-weight:normal; float:none;}
+		}
+		input[type=text], select, textarea {border:1px solid #ccc; @include border-radius(4px); width:90%; padding:10px 5%; font-size:12px; @include box-shadow(0, 1px, 3px, rgba(0,0,0,.2), inset); height:20px;}
+		input[type=file] {width:90%; margin-bottom:10px;}
+		select {height:40px; width:100%;}
+		textarea {height:140px;}
+		input[type=radio], input[type=checkbox] {margin-top:10px; @include scale(1.2); border:1px solid #CCC}
+		div {float:left; width:45%; padding-left:3%; margin-bottom:10px;
+			&#box-captcha {padding-top:44px;}
+			label {line-height:14px; margin-top:5px;}
+			input {width:75%; padding:10px; font-size:15px;}
+			a {display:inline-block; background: url(http://oglobo.globo.com/img/bg_refresh.png) no-repeat; text-indent:-99999px; margin-left:10px; height:16px; width:16px; margin-top:13px;}
+			img {float:left;}
+		}
+		#bt_envia {@include background-gradient(#33a9dc, #1e95c8); border:1px solid #bbb; @include border-radius(5px); font: 600 18px/1.2 'OgloboCondensed'; color:#FFF; text-transform:uppercase; width:100%; padding:10px 0;}
+		.regulamento {overflow-y:scroll; width:90%; height:194px; padding:0px 10px; border:1px solid #ddd;
+			p {font-size:10px; line-height:1.3;}
+		}
+	}
+}

@@ -1,0 +1,211 @@
+//meta materia antiga
+.artigo-topo .meta {color: #666; font-size: 18px;}
+.artigo-topo .autor { text-transform: uppercase; font-weight: 600; color: #0099cc;}
+.artigo-topo .data-cadastro:before {display:block; width:20px; height: 25px; float:left; content: ""; background:url(../img/sprite.png) -70px -132px no-repeat;}
+
+.destaques > article.principal > a {height:auto;}
+.destaques > article.principal > a > h3 {line-height: 30px;font-size: 1.8em;}
+.destaques > article.principal > a > h3 > b {font-size: 19px;}
+.destaques > article.principal > a > h3 > b.retranca {font-size:inherit;font-weight:700;text-transform: none;letter-spacing: 0;padding:0;margin:0;}
+.destaques.borda-alternativa > article { border-top: 1px solid #ddd; border-bottom: 0;}
+
+// box música meio
+.box-musica-block{position: relative;max-width: 640px;margin: 20px auto;box-shadow: 0px 0px 3px #999;border-top: 3px solid #121F3A;background: #fff;}
+.box-musica-block.load{background: url(../img/loadinfo.net.gif) center no-repeat}
+.box-musica-block h6{margin:10px 20px;font-size: 20px; text-transform: uppercase; color: #121F3A;}
+.box-musica-block .loadingOlho{display:block;min-height:115px;visibility: hidden;}
+.materia-capitulo .artigo-corpo .box-musica-block .info{margin:10px 20px;text-align:left;text-transform: none;}
+
+.box-musica-block .info{margin:10px 20px;}
+.box-musica-block .info img{display: block;width: 95px;height: 95px;float: left;margin:0;}
+.box-musica-block .info div{width: 143px;float:left;margin:-5px 0 0 15px;}
+.box-musica-block .info div .nome{display:block;min-height:35px;line-height: 30px;margin:2px 0 0;font-size: 22px;font-weight: 600;}
+.box-musica-block .info div .album{line-height: 10px;font-size: 16px;font-weight: 500;color:#BBB;}
+.box-musica-block .info div .album > span{display:block;}
+.box-musica-block .info div a{display: block;width:115px;margin-top:5px;height:25px;line-height:25px;font-size:15px;font-weight:600;color:#fff;text-align: center;text-transform:uppercase;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;border-bottom:2px solid #00759C;background:#0097CB;}
+.box-musica-block ol{margin:-10px 0 0;padding:0 0 0 260px;counter-reset: item;}
+.box-musica-block ol li{position:relative;height:30px;line-height:30px;margin:0;font-size: 18px;font-weight: 500;color:#333;text-indent:25px;padding: 0;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;border-bottom: 1px solid #E2E2E2;list-style-type: decimal-leading-zero;}
+.box-musica-block ol li:before {content: counter(item); counter-increment: item; display: inline-block; width: 10px; height: 15px; line-height: 15px; margin: 0 15px 0 -25px; font-size: 18px; color: #6B6B6B; text-indent: 0;}
+.box-musica-block ol li.last{border:none;}
+.box-musica-block ol li a{color:#333;}
+.box-musica-block ol li span{position:absolute;top:14px;left:0;display:block;width:10px;height:15px;line-height:15px;font-size: 18px;color:#6B6B6B;text-indent:0;}
+.box-musica-block .mais-musica{width:100%;height:65px;border-top: 1px solid #E2E2E2}
+.box-musica-block .mais-musica img{float:left;width: 80px;height: 39px;float:left;margin:15px 20px;}
+.box-musica-block .mais-musica span{float:right;margin:23px 20px 0 0;text-transform: uppercase;}
+.box-musica-block .mais-musica a span{color:#222;}
+
+// box wikipedia meio
+.box-wikipedia{position: relative;max-width: 640px;margin: 20px auto;padding:20px 0;box-shadow: 0px 0px 3px #999;background: #fff;}
+.box-wikipedia h6{margin:0 20px 10px;font-size: 24px;font-weight:600;color: #121F3A;}
+.box-wikipedia p{margin:10px 20px;font-family:Arial, Helvetica, Sans-serif;font-size: 14px;font-weight:normal;color:#6b6b6b;}
+.box-wikipedia span.wikipedia{display: block;width:80px;height:25px;overflow:hidden;text-indent:-999px;margin:10px 20px;background:url(../img/wikipedia.png)}
+.box-wikipedia span.wikipedia a{display: block;width:100%;height:100%;}
+.box-wikipedia p > a.leia-mais{display:block;padding-left: 20px;font-family:Arial, Helvetica, Sans-serif;font-size: 13px;font-weight:600;color:#0097c5;background: url(../img/lupa-wikipedia.png) no-repeat left 2px}
+
+// player audio capa
+.player.mini {float:left; width:100px; height:60px; margin-right:10px;}
+.player.mini .play {width:100%; height:35px;}
+.player.mini .play span {left:50%; margin-left:-5px; top:8px; background-position:0 -65px; background-repeat:no-repeat; width:18px; height:18px;}
+.player.mini .play span.pause {background-position:0 -85px;}
+.player.mini .audio-info {margin:40px 5px 0; height:15px;}
+.player.mini .audio-info .nome-arquivo {display:none;}
+.player.mini .audio-info .progress-time, .player.mini .audio-info .total-time {font-size:12px;}
+.player.mini .progress-bar {width:40%; margin:5px 33% 0;}
+
+// fotogaleria antiga
+.fotogaleria {background: black; color: white; margin-bottom:10px;}
+.fotogaleria #wrapperFotogaleria, .fotogaleria .wrapperFotogaleria { position: relative;}
+.fotogaleria #scrollerFotogaleria, .fotogaleria .scrollerFotogaleria { opacity: 0; }
+.fotogaleria img {max-width:100%; display:block; margin:0;}
+.fotogaleria figure { float: left; }
+.fotogaleria ul { list-style:none; display:block; float:left; width:100%; height:100%; padding:0; margin:0; text-align:left; }
+.fotogaleria .titulo { text-transform: uppercase; font-size: 18px; margin: 0 10px; padding: 10px 0; line-height: 18px; }
+.fotogaleria .titulo b { font-size: 14px; font-weight: 600; padding: 2px 5px; margin-right: 10px; background: $link; }
+.fotogaleria li { display:block; float:left; }
+.fotogaleria figcaption {margin:0 10px; padding:0 10px 0 0; font: 300 18px/18px Oglobocondensed, sans-serif; color:#FFF;}
+.fotogaleria .index { font-size: 19px; color: $link; margin: 0 10px; }
+.fotogaleria .credito { color: #9a9a9a; }
+.fotogaleria #wrapperNav, .fotogaleria .wrapperNav { position:absolute; right:10px; padding-top: 5px; background: black; }
+.fotogaleria #wrapperNav a, .fotogaleria .wrapperNav a { width: 17px; height: 17px; overflow:hidden; display: inline-block; text-indent: -999px; background: url(../img/sprite.png) -16px -228px no-repeat #0098C6; }
+.fotogaleria #wrapperNav .disabled, .fotogaleria .wrapperNav .disabled { background-color: #535353 }
+.fotogaleria #wrapperNav .next, .fotogaleria .wrapperNav .next { background-position: -16px -246px; margin-left: 5px; }
+#scrollerFotogaleria{height:auto !important;}
+
+/*plugin iscroll*/
+.scroller {height:100%; float:left; padding:0;}
+.scroller ul,#scroller li{padding:0;margin:0;}
+.scroller ul {list-style:none;display:block;float:left;width:100%;height:100%;padding:0;margin:0;text-align:left;}
+.scroller li {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;display:block; float:left;padding:10px;}
+.show-nav {display:block;width:300px;}
+.indicator, .indicator > li {display:block; float:left;list-style:none;padding:0; margin:0;}
+.indicator {    margin:8px 10px;}
+.indicator > li {text-indent:-9999em;width:8px; height:8px;border-radius:4px;-webkit-border-radius:4px;background:#ddd;overflow:hidden;margin:0 3px;text-indent:-9999px;}
+.indicator > li.active {background:#031B3A;}
+
+// blogs
+.post-corpo > img {display:block;max-width:100%;height:auto;margin:0 auto;}
+.post-corpo > p > img{display:block;max-width:100%;height:auto;margin:0 auto;}
+.post-corpo a { color: #0099cc; }
+
+.post-corpo p iframe {display: block; margin: 0 auto;}
+.post-corpo p button {display: none;}
+
+// plantao
+.plantao-corpo .opacity-hide { position:absolute;left:0;bottom:0;width:100%;height:55px;background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(60%,rgba(255,255,255,1))); background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 60%); background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 60%); background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 60%); background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 60%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );}
+.plantao-corpo .opacity-hide:before { content: ""; width: 100%; height: 1px; background: #ccc; display: block; position: absolute; left: 0; top: 31px; }
+.plantao-corpo .opacity-hide a#leia-mais{position:relative;z-index:10;width:60px;display:block;margin:15px auto 0;padding:2px 25px 2px 12px;font-size:19px;border: 1px solid #ddd; border-radius: 4px; -webkit-border-radius: 4px; border-bottom-width: 3px; color: $link;background: white url(../img/spriteBullets.png) 67px -83px no-repeat;}
+.plantao-corpo.overflow { overflow: hidden; margin-bottom: 20px; }
+
+// faq
+.faq {margin:0 0 50px 0;padding:0 10px;}
+.faq dt {position:relative;border-top: 1px solid #ccc;}
+.faq dt span {position:absolute;top:20px;right:5px;display:block;width:15px;height:15px;background:url(../img/spriteBullets.png) -8px -224px no-repeat;}
+.faq dt span.active {background-position: -8px -205px;}
+.faq dt h3 {position:relative;line-height:20px; font-size: 1.17em;font-weight:bold;color:$link;}
+.faq dt h3 a {position:relative;display:block;padding:0 25px 0 0;color: inherit;}
+.faq dd {display:none;margin:0;padding:0;}
+.faq dd p {font-family: "Times New Roman", serif; font-size: 19px; line-height: 20px;}
+.faq dd p:last-child {margin-bottom:50px;}
+.faq dd p a {color:$link;}
+
+#faq2 .header {text-align:center;}
+#faq2 .header p {font: 13px/15px Arial, Helvetica, sans-serif; color:#707070;}
+#faq2 .header p.title {font-weight:400; font-size:34px; font-family: OgloboCondensed; line-height:32px; color:#385987; text-transform:uppercase; border-bottom:1px solid #CCC; padding:10px 0; margin:0 20px;}
+#faq2 .header p.title span {font-weight:600; color:#0085b7;}
+#faq2 .header p.appStore a {background: url(../img/ed-digitais/appStore.jpg) no-repeat; display:inline-block; text-indent:-99999px; width:99px; height:30px;}
+
+#faq2 .contact {padding:0; margin:0 auto 40px; width:260px;}
+#faq2 .contact li {background: url(../img/ed-digitais/contact.png) no-repeat; padding-left:40px; height:40px; list-style:none; margin-bottom:10px;}
+#faq2 .contact li.phone {}
+#faq2 .contact li.phone p {padding:0; margin:2px 0;}
+#faq2 .contact li.email {background-position: 0 -70px;}
+#faq2 .contact li.tuts {background-position: 0 -143px;}
+
+#faq2 .contact li p {text-align:left; padding:13px 0; margin:0; font-weight:bold;}
+#faq2 .contact li p a {color:#707070; text-decoration:none;}
+#faq2 .contact li p span {font-weight:normal; color:#27457d;}
+
+#faq2 .content {padding:0 3%;}
+#faq2 .content .questions {background:#f5f7f8; margin-bottom:30px;}
+#faq2 .content .questions p {padding:0 5%; margin:0; color:#707070; font-size:18px; text-align:left; margin-bottom:10px;}
+#faq2 .content .questions p a {color:#27457d; text-decoration:underline;}
+#faq2 .content .questions p.title {width:100%; background: url(../img/ed-digitais/tituloFaq.jpg) no-repeat; text-align:center; font: 15px Arial, Helvetica, sans-serif; color:#FFF; padding:6px 0; margin-bottom:10px;}
+#faq2 .content .questions p.q {text-align:center; font:600 21px OgloboCondensed, Arial, Helvetica, sans-serif; color:#27457d; margin:30px 0 10px;}
+
+#faq2 .content .questions p.back2top {border-bottom:1px solid #e3e3e6; margin:40px 0 10px; text-align:center; font-size:14px; font-family: OgloboCondensedMedium, Arial, Helvetica, sans-serif; padding-bottom:5px;}
+#faq2 .content .questions p.back2top a {color:#0085b7; background: url(../img/ed-digitais/linkArrow.png) center top no-repeat; padding-top: 15px; text-decoration:none;}
+
+// ediçoes digitais
+#edDigitais .header {text-align:center;}
+#edDigitais .header p.title {font-size:23px; line-height:22px; color:#385987; text-transform:uppercase; border-bottom:1px solid #CCC; padding:10px 0; margin:0 20px;}
+#edDigitais .header p.appStore a {background: url(../img/ed-digitais/appStore.jpg) no-repeat; display:inline-block; text-indent:-99999px; width:99px; height:30px;}
+
+#edDigitais .content {width:88%; margin:30px 2% 30px; background:#f3f3f3; padding:0 4% 20px;}
+#edDigitais .content .title {text-align:center; background: url(../img/ed-digitais/assineBtnBg.png) no-repeat; color:#FFF; font: 19px Arial, Helvetica, sans-serif; width:180px; margin:0 auto; padding:5px 0;}
+#edDigitais .content .sub {font: 600 23px/22px OgloboCondensed, Arial, Helvetica, sans-serif; color:#385987; text-transform:uppercase; text-align:center;}
+#edDigitais .content p {font: 15px/18px Arial, Helvetica, sans-serif; color:#707070; text-align:justify;}
+#edDigitais .content hr {border:none; background: url(../img/ed-digitais/divider.png) no-repeat center; width:100%; height:13px;}
+
+#edDigitais .content p.small {font-size:10px; margin:20px 0 10px;}
+#edDigitais .content p.appStore, #edDigitais .content p.tuts {text-align:center; margin:15px 0 0;}
+#edDigitais .content p.appStore a {background: url(../img/ed-digitais/appStore.jpg) no-repeat; display:inline-block; text-indent:-99999px; width:99px; height:30px;}
+
+#edDigitais .content p.tuts a {background: url(../img/ed-digitais/tutsBg.png) no-repeat; display:inline-block; color:#334582; text-decoration:none; width:255px; padding:12px 0 25px; text-transform:uppercase; font-weight:bold; font-size:15px;}
+#edDigitais .content p.smallprints {border-bottom:1px solid #dbdcde; font-size:10px; margin:20px 0 10px; text-align:center;}
+
+#edDigitais .content ul {text-align:center; margin:0; padding:0;}
+#edDigitais .content ul li {display:inline-block; text-indent:-99999px;}
+#edDigitais .content ul li a {display:block;}
+#edDigitais .content ul li.appStore {background: url(../img/ed-digitais/btn_apple.png) no-repeat; width:100px; height:29px; margin-right:15px;}
+#edDigitais .content ul li.samsung {background: url(../img/ed-digitais/btn_samsung.png) no-repeat; width:101px; height:32px; top:-2px; position:relative;}
+
+#edDigitais .content p.assine {text-align:center; height:35px; margin:30px 0 40px;}
+#edDigitais .content p.assine a {background: url(../img/ed-digitais/assineBtnBg.png) repeat-x; color:#FFF; font-size:20px; padding:4px 15px; line-height:30px;}
+
+// register wall
+.register-wall h4 {height:25px;margin:0 20px;position:relative;border-bottom:1px solid #eee;}
+.register-wall h4 span {position:absolute;top:10px;left:50%;margin-left:-45px;width:90px;background:white;font-family: "Times New Roman", serif; font-size: 18px; font-weight:300; font-style:italic;  color: #6b6b6b; text-align:center;}
+.register-wall ul {float:none;margin:20px 20px 15px 20px;padding:0;}
+.register-wall ul li {display:table;vertical-align:middle;line-height:20px;margin:10px 0px 15px 20px;}
+.register-wall ul li span {display:block;width:47px;height:40px;float:left;margin-right:10px;background:url(../img/spriteRegisterWall.png);}
+.register-wall ul li#conteudo span {background-position:0 0;}
+.register-wall ul li#eu-reporter span {background-position:0 -40px;}
+.register-wall ul li#servicos span {background-position:0 -80px;}
+.register-wall ul li p{display:table-cell;vertical-align:middle;margin:0;font-size:18px;color:#012d4d;}
+.register-wall ul li p b{text-transform:uppercase;}
+.register-wall #bt-login{padding:0 20px;display:block;margin:0 20px;padding:6px 10px;font-size:18px;font-weight:600;text-align:center;color:#fff;text-transform:uppercase;background:#0091C3;border:1px solid #DFDFDF;border-radius:4px;-webkit-border-radius:4px;box-shadow:1px 1px 1px #ddd;-webkit-box-shadow:1px 1px 1px #ddd;}
+.register-wall span.cadastrado{padding: 0 20px;display:block;line-height:22px;margin:5px 0 50px;font-size:18px;color:#666;text-align:center;}
+.register-wall a.duvidas {padding: 0 20px;display:block;height:65px;line-height:60px;font-weight:bold;color:#2C2C2C;text-align:center;border-top:1px solid #CDCDCD;background:#F3F3F3;}
+.register-wall a.duvidas b{color:#0091C3;text-transform:uppercase;}
+.register-wall #formulario{display:block;width:320px;height:550px;margin:20px auto 40px;border:0;}
+
+// pbl patrocinada
+.publ-patrocinada a {display:block; width:100%; height:100%;}
+.publ-patrocinada .patr {display:inline-block; margin:15px 0 0;}
+
+// materia
+.artigo-corpo.overflow { overflow: hidden; margin-bottom: 20px; }
+.artigo-corpo .opacity-hide {position:absolute;left:0;bottom:0;width:100%;height:55px;background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 60%); z-index:100;}
+.artigo-corpo .opacity-hide:before { content: ""; width: 100%; height: 1px; background: #ccc; display: block; position: absolute; left: 0; top: 31px; }
+.artigo-corpo .opacity-hide a#leia-mais{position:relative;z-index:10;width:60px;display:block;margin:15px auto 0;padding:2px 25px 2px 12px;font-size:19px;border: 1px solid #ddd; border-radius: 4px; -webkit-border-radius: 4px; border-bottom-width: 3px; color: $link;background: white url(../img/spriteBullets.png) 67px -83px no-repeat;}
+
+.materia-capitulo .artigo-topo .titulo-capitulo {display:block;margin-bottom:20px;padding:0 20px;font-size: 22px; line-height: 22px; font-weight: normal; text-transform: uppercase; text-align: center;}
+
+// veja tambem
+.veja-tambem {margin: 20px 0;}
+.veja-tambem > article { padding: 0 10px; }
+.veja-tambem h3 { margin: 0; font-size: 18px; line-height: 20px; }
+.veja-tambem a { display: block; margin: 15px 0 0; padding-bottom: 15px; border-bottom: 1px solid #ddd; }
+.veja-tambem > article:last-child a { border-bottom: none; }
+.veja-tambem b, .retranca {font-size: 14px; text-transform: uppercase; font-weight:700; padding: 2px 7px; letter-spacing: .1em; margin-right: 5px; background:$link; color:#FFF;}
+
+@media screen and (min-width: 240px) and (max-width: 320px) {
+	.box-musica-block .mais-musica img{width: 55px;height: 27px;margin:18px 14px 0;}
+	.box-musica-block .mais-musica span {font-size: 14px;}
+}
+
+@media screen and (max-width: 460px) {
+	.box-musica-block .info div{width: 135px;margin-top: -10px;}
+	.box-musica-block .info img{width: 90px;height: 90px;}
+	.box-musica-block ol {clear: both;margin: 0;padding: 0;}
+}

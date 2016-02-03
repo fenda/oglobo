@@ -1,0 +1,22 @@
+@import 'config/_variables';
+@import 'config/_mixins';
+@import 'config/_rules';
+
+@import 'general/_normalize';
+@import 'general/_reset';
+
+// modules
+@import 'modules/_header';
+@import 'modules/_footer';
+
+@import 'modules/_agenda';
+@import 'modules/_clima';
+@import 'modules/_coluna';
+@import 'modules/_faleconosco';
+@import 'modules/_listafatos';
+@import 'modules/_horoscopo';
+@import 'modules/_newsletter';
+@import 'modules/_transito';
+
+@import 'layout/_home';
+@import 'layout/_main';

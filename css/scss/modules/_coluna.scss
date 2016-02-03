@@ -1,0 +1,33 @@
+.coluna-header {padding: 0 10px;
+	article {border-bottom:1px solid #ddd;
+		h3 {line-height:20px; margin:25px 0 10px 0; font-size:22px; font-weight:bold; text-transform:uppercase; color:#303030;}
+		span {display:block;line-height:20px;margin-bottom:20px;font-size:19px;font-weight:normal;color:#666;}
+	}
+}
+
+.coluna .coluna-topo {margin-top:15px;
+	h1 {margin:0; padding:0 10px; font-size:30px; line-height:1; color:#1c314d;}
+}
+
+.coluna .embed-social {height:auto !important; margin:20px !important;
+	iframe {width: 100% !important;}
+	iframe[src*="vine.co"] {height:300px;}
+}
+
+.pag-coluna {
+	.coluna-principal {position:relative; margin-bottom:10px;
+		p {font-size:19px; line-height:20px; padding:0 10px;}
+		a {color:#09c;}
+	}
+	.coluna-corpo {position:relative; margin-bottom:10px; padding:0 10px;
+		p, a, li {font: 19px/1 "Times New Roman", serif; font-size:19px;}
+		h1, h2, h3, h4, h5 {font-size:24px; font-weight:600; line-height:20px; color:#303030;}
+		h2 {font-size:22px;}
+		h3, h4, h5 {font-size:20px;}
+		a {text-decoration:underline;}
+		hr {height:1px; border:0; background:#bbb;}
+	}
+	.meta {padding:0 10px; color:#666;
+		.data-publicacao:before {content:''; float:left; width:20px; height: 25px; background:url(../img/sprite.png) -70px -134px no-repeat;}
+	}
+}

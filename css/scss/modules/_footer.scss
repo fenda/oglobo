@@ -1,0 +1,14 @@
+footer {position:relative; background: #025579;
+	.footer {margin:0; padding:0; height:40px;
+		li {width:33%; float:left; line-height:30px; margin-top:5px; text-align:center; font-size:14px; text-transform:uppercase; color:#00abd3; font-weight:600;
+			a {color:#FFF;}
+		}
+	}
+}
+
+.link-top {position:fixed; bottom:5px; right:-2px; background:#025579; width:120px; padding:5px 6px; @include border-radius(2px); text-align:center; font-size:14px; text-transform:uppercase; opacity:0; transition:.5s; z-index:999;
+	a {color:#FFF;
+		&:after {content:''; width:10px; height:12px; background: url(../img/sprite.png) -70px -75px no-repeat; display:inline-block; margin-left:3px;}
+	}
+	&.show {opacity:1;}
+}

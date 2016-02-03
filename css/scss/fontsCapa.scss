@@ -1,0 +1,16 @@
+@mixin font-face($style-name, $file, $font-weight) {
+  $filepath: "../font/" + "/" + $file;
+  @font-face {
+    font-family: $style-name;
+      src:  url('#{$filepath}.eot');
+      src:  url('#{$filepath}.eot?#iefix') format('embedded-opentype'),
+            url('#{$filepath}.woff') format('woff'),
+            url('#{$filepath}.ttf') format('truetype'),
+            url('#{$filepath}.svg##{$style-name}') format('svg');
+            font-weight: $font-weight;
+  }
+}
+
+@include font-face("OgloboCondensed", OgloboCondensedLight, 300);
+@include font-face("OgloboCondensed", OgloboCondensedRegular, normal);
+@include font-face("OgloboCondensed", OgloboCondensedSemibold, 700);

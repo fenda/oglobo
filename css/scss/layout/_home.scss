@@ -1,0 +1,168 @@
+// box de noticias capa
+.box-editoria {position:relative; margin:10px 0 35px;
+	header {border-top:2px solid #336b83; border-bottom:1px solid #C7C7C7; background:#f0f0f0; background: linear-gradient(to bottom,  #f0f0f0 0%,#f0f0f0 95%,#d3d3d3 100%);
+			.editoria {margin:10px 0;}
+			.collapse-box {position:absolute; top:16px; right:10px; display:block; width:30px; height:25px; overflow:hidden; text-indent:-999px; border-left:1px solid $darkBlue; background:url(../img/spriteBullets.png) 4px -112px no-repeat;}
+			.close {background:url(../img/spriteBullets.png) 4px -134px no-repeat;}
+	}
+	&.close{padding:0;margin-bottom:15px;}
+	ul {position:relative; margin:0; padding:0;
+		*, *:before, *:after {@include box-sizing(border-box);}
+		&.thelist {border-bottom:1px solid #CACACA; @include box-shadow(0, 2px, 3px, #DDD);
+		}
+		li {width:100%; padding:10px;
+			a {display:block;
+				h3 {margin:0; line-height:18px; height:60px; display:table-cell; vertical-align:middle;}
+				img {float:left; margin-right:10px; @include border-radius(4px);}
+				b {font-size:14px; text-transform:uppercase; font-weight:600; padding:2px 7px; letter-spacing:.1em; margin-right:5px; background:$link; color:#FFF;}
+			}
+			.retranca {color: $link; text-shadow:none; letter-spacing:1px;}
+			ul li {padding:10px 0; border-bottom:1px solid #ccc;
+				&:last-child{border-bottom:0;}
+				a {height:60px; overflow:hidden;}
+			}
+			.especial-publicitario {@extend .especial-publicitario;}
+			
+		}
+	}
+	.pagerContainer {text-align:center;}
+	.pager {position:relative; display:inline-block; text-align:center; border:1px solid #ccc; border-top:0; border-radius:0 0 4px 4px; background:#fff; @include box-shadow(0, 2px, 3px, #DDD); padding:7px 9px; line-height:11px; z-index:2; margin-top:-1px;
+		span {display:inline-block; background:#9b9b9b; text-indent:-99999px; @include border-radius(20px); width:8px; height:8px; margin:0 3px;
+			&.cycle-pager-active {background:#031b3a;}
+		}
+	}
+}
+// box dos clubes
+.box-clubes {position:relative; margin:10px 0 0;
+	ul {margin:20px 0; padding:0 10px; border-bottom:1px solid #ddd;
+		li {width:22%; float:left; margin:3px 0 10px 2%; padding:1px 0;
+			img {display:block; width:100px; margin:0 auto; padding:0;}
+		}
+	}
+}
+
+// box topicos
+.topicos {background:#f0f0f0; margin:10px 0 0;
+	ul {margin:0; padding:0 10px;
+		li {border-bottom:1px solid #ddd; padding:10px 0;
+			&:last-child {border-bottom:none;}
+			&.informe-publ a {color:#FFF; background:#FFAF00; font-weight:500; font-style:italic; display:table; padding:0 15px; @include border-radius(4px);}
+		}
+		a {color:$link; font-size:18px; font-weight:700; text-transform:uppercase;}
+	}
+}
+
+//box gente do globo
+.box-elipse {position:relative; padding-bottom:20px; background:#f3f3f3; border-top:2px solid #006b85;
+	ul {width:100%; padding:0;
+		li {padding:10px; width:100%;
+			a {display:block;}
+			h3 {font-size:1.11em; line-height:20px; font-weight:normal; margin:0 0 10px 0; color:#666;}
+			img {float:right; @include border-radius(40px); width:70px; height:70px;}
+			span {display:block; font-weight:bold; text-transform:uppercase; color:$darkBlue;}
+		}
+		*, *:before, *:after {@include box-sizing(border-box);}
+	}
+	.pager {text-align:center;
+		span {display:inline-block; background:#9b9b9b; text-indent:-99999px; @include border-radius(20px); width:8px; height:8px; margin:0 3px;
+			&.cycle-pager-active {background:#031b3a;}
+		}
+	}
+}
+
+// slider destaques home
+.manchete-principal {margin:3px 0 0; overflow:hidden; min-height:193px;
+	ul {
+		*, *:before, *:after {@include box-sizing(border-box);}
+		li {padding:0; position:absolute; top:0; left:0; background:#FFF; width:100%;
+			a {
+				h3 {position:absolute; bottom:30px; left:0px; height:auto; padding:0 20px; font-size:24px; line-height:26px; color:#FFF; text-align:center; text-shadow: rgba(0, 0, 0, 1) 0px 0px 4px;}
+				img {display:inline-block; width:100%; height:auto; @include border-radius(0); margin:0}
+
+			}
+			&.texto {text-align:center;
+				a {
+					h3 {color:#012d4d; text-shadow:0 0 0 #FFF; position:relative; bottom:auto; font-size:30px; line-height:28px; padding-top:20px;}
+					p {color:#3e3e3f; font: 13px/16px Arial, sans-serif; padding:0 20px; margin-bottom:20px;}
+				}
+			}
+		}
+	}
+	.pager {position:absolute; bottom:0; z-index:999; width:100%; background:transparent; padding:7px 0; border:none; box-shadow:0 0 0 #FFF;
+		span {background:#dedede;
+			&.cycle-pager-active {background:#0198c9;}
+		}
+	}
+}
+ a.thumbChamada img {width:100px; height:60px;}
+
+// destaques capa e editoria
+.destaques {
+	article {margin:10px 0; border-bottom:1px solid #ddd;
+		&:last-of-type {border-bottom:0;}
+		a {display:block; height:60px; overflow:hidden; margin-bottom:10px; position:relative;
+			h3 {height:60px; display:table-cell; vertical-align:middle; margin:0; line-height:19px;
+				b {font-size:14px; text-transform:uppercase; font-weight:600; padding: 2px 7px; letter-spacing:.1em; margin-right:5px; background:$link; color:#FFF;}
+			}
+		}
+		&.especial-publicitario {@extend .especial-publicitario;}
+	}
+	&:not(.principal) {padding:0 10px;
+		img {float:left; margin-right:10px; @include border-radius(4px);}
+	}
+	&.manchetes {
+		article {width:49%; margin:10px 0 15px;border:none; float:left;
+			&:last-of-type {float:right;}
+			img {float:none; width:100%; height:auto;}
+			a {height:auto; margin:0;
+				h3 {display:block; height:auto; margin-top:10px;}
+			}
+		}
+	}
+	&.principal {position:relative;
+		article {margin:3px 0 0 0; text-align:center;}
+		a {width:100%; height:auto;
+			img {max-width:150%; width:100%; height:auto;}
+			h2 {font-size:28px; line-height:26px; position:absolute; bottom:0; padding:0 4%; color:#FFF; text-shadow: rgba(0, 0, 0, 1) 0px 0px 4px; width:92%;
+				b {text-shadow:none; font-size:20px; font-weight:600; text-transform:uppercase; letter-spacing:1px; padding:2px 7px; margin-right:5px; background:$link;}
+			}
+			h3 {height:auto; font-size:1.8em; line-height:30px;}
+		}
+		&.sem-foto {
+			a {
+				h2 {position:relative; color:$darkBlue; text-shadow:none;}
+			}
+		}
+		&.informe-publicitario {
+			h2 {color:#FFF; font-size:32px; line-height:33px; font-weight:300; font-style:italic;}
+		}
+	}
+}
+
+// box de videos globo.com
+.galeria-videos {background:#333; padding-bottom:10px;
+	.owl-carousel {float:left;}
+	.conteudo {width:320px; margin:0 auto; overflow:hidden;
+		> p {font-size:24px; line-height:27px; color:#fff; margin:15px 0 20px; text-transform:uppercase; float:left;}
+		.mais-videos {float:right; opacity:.6; font-size:16px; font-weight:500; color:#fff; text-transform:uppercase; margin:20px 0;}
+	}
+	.videoInfo {
+		.img {background:#000; height:240px; width:100%;
+			a {padding:0; width:100%;}
+		}
+		img {float:left; width:100%; box-shadow: 0 0 30px #000; position:relative; top:50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);}
+		&.playing .img {display:none;}
+		a {position:relative; z-index:3; padding:3%; height:94%; width:94.5%; float:left;}
+		.playBtn {width:50px; height:37px; border:1px solid #FFF; text-align:center; color:#FFF; border-radius:2px; line-height:35px; transition: all .2s ease-in-out; margin:10px 0 0;}
+		.tag {text-transform:uppercase; font-weight:700; font-size:15px; line-height:17px; margin:10px 0 0; color:$link;}
+		p.duration {background:#000; font:10px Arial, sans-serif; padding:2px 3px; margin:0; display:inline-block; color:#FFF;}
+		p.title {font-size:24px; font-weight:700; line-height:24px; color:#FFF; margin:10px 0; width:94%;}
+	}
+	.owl-controls {position:relative; float:left; width:100%; text-align:center; padding-top:10px;
+		.owl-page {display:inline-block; width:7px; height:7px; margin:0 4px;
+			span {background:#000; display:block; width:100%; height:100%; border-radius:10px;}
+			&.active span {background:$link;}
+		}
+	}
+	.player {display:none; margin:0;}
+}
